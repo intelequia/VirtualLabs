@@ -25,50 +25,11 @@ Luis Fco. Blanco
 IT Director
 Universidad Pontificia Comillas-ICAI-ICADE [Madrid]
 
-## concepts
-Tenant environment
-The provider's desktop hosting service is implemented as a set of isolated tenant environments. 
-
-Remote Desktop Web Access
-The Remote Desktop Web Access (RD Web Access) component allows the tenant's employees to have a single website where they can authenticate and then access Windows desktops and applications that are hosted in Microsoft Azure
-
-Remote Desktop Gateway
-The Remote Desktop Gateway (RD Gateway) component enables tenant employees who are using client devices on the public Internet to securely access Windows desktops and applications that are hosted in a Cloud Service in Microsoft Azure.
-
-Azure Active Directory Domain Services
-The tenant's network includes Azure Active Directory Domain Services (AAD DS) for the tenant's forest and domain. Using AAD DS allows the tenant to manage groups and users in their AAD tenant, with all changes syncing back to the domain on a recurring basis.
-
-Azure SQL Database
-Azure SQL Database allows for hosters to extend their Remote Desktop Services deployment without needing to deploy and maintain a full SQL Server Always-On cluster.
-
-Azure Active Directory Application Proxy
-Azure Active Directory Application Proxy is a service provided in paid-SKUs of Azure Active Directory that allow users to connect to internal applications through Azure's own reverse-proxy service.
-
-Remote Desktop Connection Broker
-Remote Desktop Connection Broker (RD Connection Broker) manages incoming remote desktop connections to the servers in Remote Desktop Session Host (RD Session Host) server farms, known as collections. 
-
-Remote Desktop Licensing
-Each tenant's environment includes an activated Remote Desktop Licensing server to allow users to connect to the Remote Desktop Session Host (RD Session Host) servers that host the tenant's desktops and applications.
-
-Remote Desktop Session Host
-The Remote Desktop Session Host (RD Session Host) component provides a tenant's users with session-based desktops and RemoteApp programs. 
-
-File server
-The file server provides shared folders by using the Server Message Block (SMB) 3.0 protocol. 
-
-User Profile Disks
-
-User profile disks allow users to save personal settings and files when they are signed in to a session on an RD Session Host server in a collection, and then have access to the same settings and files when signing in to a different RD Session Host server in the collection.
-
-For more information (https://docs.microsoft.com/en-us/windows-server/remote/remote-desktop-services/desktop-hosting-service)
-
-
-
 ## Getting Started
 
 [Welcome!](Documentation/GettingStarted.md)  These instructions will help you to understand Remote Desktop Services solution and set up the project components for cloud deployment. 
 
-### Prerequisites
+### Requirements
 
 The set of softwares and subscriptions for usage and deployment of the project are mentioned in the [requirements](Documentation/Requirements.md) document.
 
@@ -79,11 +40,6 @@ Refer to the [solution architecture](Documentation/SolutionArchitecture.md) guid
 ### Deployment 
 
 Refer to the [deployment](Documentation/DeploymentSteps.md) guide. 
-
-
-## Built With
-
-
 
 ## License
 
