@@ -65,11 +65,11 @@ Refer to the [solution architecture](Documentation/SolutionArchitecture.md) guid
 
 ## Learn more about RDS and roles
 
-- [Web Access (RDWeb)](https://technet.microsoft.com/en-us/library/cc731923(v=ws.11&#41;.aspx)
-- [Gateway (RDGW)](https://technet.microsoft.com/en-us/library/cc731150(v=ws.11&#41;.aspx)
-- [Connection Broker (RDCB)](https://technet.microsoft.com/en-us/library/cc772245(v=ws.11&#41;.aspx)
-- [Licensing (RDLic)](https://technet.microsoft.com/en-us/library/cc725933(v=ws.11&#41;.aspx)
-- [Session Host (RDSH)](https://technet.microsoft.com/en-us/library/cc742822(v=ws.11&#41;.aspx)
+* [Web Access (RDWeb)](https://technet.microsoft.com/en-us/library/cc731923)
+* [Gateway (RDGW)](https://technet.microsoft.com/en-us/library/cc731150)
+* [Connection Broker (RDCB)](https://technet.microsoft.com/en-us/library/cc772245)
+* [Licensing (RDLic)](https://technet.microsoft.com/en-us/library/cc725933)
+* [Session Host (RDSH)](https://technet.microsoft.com/en-us/library/cc742822)
 
 ## License
 
