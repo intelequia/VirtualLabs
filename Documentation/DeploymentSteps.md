@@ -1,10 +1,8 @@
 # **Template execution steps**
 
 ## Basic deployment
-The Azure Resource Manager template ‘rds-base-azuredeploy.json’ creates a Virtual Network, three subnets (Frontend, Backend and SessionHost ones) and a Standard Storage account in which vhds will be stored.
+The Azure Resource Manager template ‘rds-base-azuredeploy.json’ creates a Virtual Network, three subnets (Frontend, Backend and SessionHost ones), three Network Security Groups (one for each subnet to allow internal and external RDS communications) and a Standard Storage account in which vhds will be stored.
 It is linked to other templates, this enable us decomposing our deployment into a set of targeted, purpose-specific templates:
-* **rds-nsg-azuredeploy.json**  
-This template help us to specify which ports should be opened in each subnet in order allow internal and external RDS communications
 * **rds-ad-azuredeploy.json**  
 This template helps us to create and configurate two Windows Server 2016 virtual machine which gets the Domain Controller role.
 * **rds-be-azuredeploy.json**  
