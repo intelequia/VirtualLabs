@@ -56,10 +56,20 @@ First, make sure you meet the following requirements:
 3. Now wait for the green check in the notifications hub. It will take **1 to 2 hours** for completes the resources deployment.
 4. Export and copy self-signed certificates to client computers
    * A self-signed certificate have been used for the deployment. This certificate will need to be installed on the local client machines. See how do it following the steps described in [this guide](Documentation/UserAccessWebCert.md). 
-
+5. Configure Session Collection
+   * Set Domain Users as user group
+   
 ### Architecture
 
 Refer to the [solution architecture](Documentation/SolutionArchitecture.md) guide. 
+
+## Learn more about RDS and roles
+
+- [Web Access (RDWeb)](https://technet.microsoft.com/en-us/library/cc731923(v=ws.11&#41;.aspx)
+- [Gateway (RDGW)](https://technet.microsoft.com/en-us/library/cc731150(v=ws.11&#41;.aspx)
+- [Connection Broker (RDCB)](https://technet.microsoft.com/en-us/library/cc772245(v=ws.11&#41;.aspx)
+- [Licensing (RDLic)](https://technet.microsoft.com/en-us/library/cc725933(v=ws.11&#41;.aspx)
+- [Session Host (RDSH)](https://technet.microsoft.com/en-us/library/cc742822(v=ws.11&#41;.aspx)
 
 ## License
 
