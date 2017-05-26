@@ -54,6 +54,8 @@ First, make sure you meet the following requirements:
    * Select the size for Frontend and Backend VMs.
    * Select the size for Session Host VMs.
 
+Now wait for the green check in the notifications hub. It will take **1 to 2 hours** for completes the resources deployment.
+
 ### Architecture
 
 Refer to the [solution architecture](Documentation/SolutionArchitecture.md) guide. 
