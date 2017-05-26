@@ -5,13 +5,13 @@
     "adminUsername": {
       "type": "string",
       "metadata": {
-        "description": "The name of the Frontend Subnet"
+        "description": "Administrator Username"
       }
     },
     "adminPassword": {
       "type": "securestring",
       "metadata": {
-        "description": "The name of the Frontend Subnet"
+        "description": "Administrator Password"
       }
     },
     "domainName": {
@@ -20,13 +20,13 @@
         "description": "The FQDN of the AD Domain created "
       }
     },
-    "dnsName": {
+    "dnsLabelPrefix": {
       "type": "string",
       "metadata": {
-        "description": "Public DNS"
+        "description": "Unique gateway public DNS prefix for the deployment. The fqdn will look something like '<dnsname>.<location>.cloudapp.azure.com'. Up to 62 chars, digits or dashes, lowercase, should start with a letter: must conform to '^[a-z][a-z0-9-]{1,61}[a-z0-9]$'."
       }
     },
-    "RDFE-RDBE-VmSize": {
+    "Frontend-Backend-VmSize": {
       "type": "string",
       "allowedValues": [
         "Standard_D2_v2",
@@ -35,7 +35,7 @@
         "Standard_D5_v2"
       ],
       "metadata": {
-        "description": "The size of the RDFE and RDBE VMs"
+        "description": "The size of the Frontend and Backend VMs"
       },
       "defaultValue": "Standard_D2_v2"
     },
@@ -54,7 +54,7 @@
         "Standard_NC12"
       ],
       "metadata": {
-        "description": "The size of the RDSH VMs"
+        "description": "The size of the SessionHost VMs"
       },
       "defaultValue": "Standard_D12_v2"
     }
@@ -98,12 +98,12 @@
         }
       }
     ],
-    "Template.Uri": "https://raw.githubusercontent.com/intelequia/VirtualLabs/master/Templates/",
+    "Template.Uri": "https://raw.githubusercontent.com/intelequia/VirtualLabs/master/simple-architecture/Templates/",
     "DCTemplate.Uri":"[concat(variables('Template.Uri'), 'rds-ad-azuredeploy.json')]",
     "FETemplate.Uri":"[concat(variables('Template.Uri'), 'rds-fe-azuredeploy.json')]",
     "BETemplate.Uri":"[concat(variables('Template.Uri'), 'rds-be-azuredeploy.json')]",
     "SHTemplate.Uri":"[concat(variables('Template.Uri'), 'rds-sh-azuredeploy.json')]",
-    "Configuration.Uri": "https://raw.githubusercontent.com/intelequia/VirtualLabs/master/Configuration/",
+    "Configuration.Uri": "https://raw.githubusercontent.com/intelequia/VirtualLabs/master/simple-architecture/Configuration/",
     "DCSubdeploymentName": "DCSubdeployment",
     "FESubdeploymentName": "FESubdeployment",
     "BESubdeploymentName": "BESubdeployment",
@@ -217,10 +217,10 @@
             "value": "[parameters('domainName')]"
           },
           "publicDNS": {
-            "value": "[parameters('dnsName')]"
+            "value": "[parameters('dnsLabelPrefix')]"
           },
           "VmSize": {
-            "value": "[parameters('RDFE-RDBE-VmSize')]"
+            "value": "[parameters('Frontend-Backend-VmSize')]"
           },
           "Configuration.Uri": {
             "value": "[variables('Configuration.Uri')]"
@@ -263,7 +263,7 @@
             "value": "[parameters('domainName')]"
           },
           "VmSize": {
-            "value": "[parameters('RDFE-RDBE-VmSize')]"
+            "value": "[parameters('Frontend-Backend-VmSize')]"
           }
         }
       },
