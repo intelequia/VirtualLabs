@@ -65,7 +65,7 @@ Refer to the [solution architecture](Documentation/SolutionArchitecture.md) guid
 
 ## Learn more about RDS and roles
 
-* [Web Access (RDWeb)](https://technet.microsoft.com/en-us/library/cc731923)
+* [Web Access (RDWeb)](https://technet.microsoft.com/en-us/library/cc731923){:target="_blank"}
 * [Gateway (RDGW)](https://technet.microsoft.com/en-us/library/cc731150)
 * [Connection Broker (RDCB)](https://technet.microsoft.com/en-us/library/cc772245)
 * [Licensing (RDLic)](https://technet.microsoft.com/en-us/library/cc725933)
