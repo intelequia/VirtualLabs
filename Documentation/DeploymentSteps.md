@@ -1,7 +1,7 @@
 # **Template execution steps**
 
 ## Basic deployment
-The Azure Resource Manager template ‘rds-base-azuredeploy.json’ creates a Virtual Network, three subnets (Frontend, Backend and SessionHost ones) and a Standard Storage account in which vhds will be stored.
+The Azure Resource Manager template â€˜rds-base-azuredeploy.jsonâ€™ creates a Virtual Network, three subnets (Frontend, Backend and SessionHost ones) and a Standard Storage account in which vhds will be stored.
 It is linked to other templates, this enable us decomposing our deployment into a set of targeted, purpose-specific templates:
 * **rds-nsg-azuredeploy.json**  
 This template help us to specify which ports should be opened in each subnet in order allow internal and external RDS communications
@@ -29,11 +29,20 @@ Stores one domain directory partition, the information about the domain in which
 * **Web Access (RDWeb)**  
 Provides user logon and selection of desktops and applications
 * **Gateway (RDGW)**  
-Routes RDP traffic between the Internet and a tenant’s network
+Routes RDP traffic between the Internet and a tenantâ€™s network
 * **Connection Broker (RDCB)**  
 Distributes connections to RDSH servers
 * **License Server (RDLic)**  
 Tracks usage of the system
 * **Session Host (RDSH)**  
-User’s desktop and applications execute on the RDSH servers
+Userâ€™s desktop and applications execute on the RDSH servers
 --------------------------------------------------------------------------------------------
+
+
+If you want to learn more...
+- [Active Directory Domain Services (AD DS)](https://technet.microsoft.com/en-us/library/cc731053(WS.10&#41;.aspx)
+- [Web Access (RDWeb)](https://technet.microsoft.com/en-us/library/cc731923(v=ws.11&#41;.aspx)
+- [Gateway (RDGW)](https://technet.microsoft.com/en-us/library/cc731150(v=ws.11&#41;.aspx)
+- [Connection Broker (RDCB)](https://technet.microsoft.com/en-us/library/cc772245(v=ws.11&#41;.aspx)
+- [Licensing (RDLic)](https://technet.microsoft.com/en-us/library/cc725933(v=ws.11&#41;.aspx)
+- [Session Host (RDSH)](https://technet.microsoft.com/en-us/library/cc742822(v=ws.11&#41;.aspx)

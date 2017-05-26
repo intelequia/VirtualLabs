@@ -1,7 +1,5 @@
 #RDS Flow Chart
 
-
-
 Let's now talk about what happens when a user accesses the RDS infrastructure.:
 
 He will first come in through the public internet and connect to the RDWeb server. 
@@ -14,3 +12,9 @@ Upon selecting one of the resources, an RDP file will be downloaded. Once the RD
 The broker will first decide which session host the user will connect to (in this case, as we are deploying a basic RDS scenario, there is only one VM but it is possiblento have a farm of multiple sessions host for this collection).
 
 Right after this and right before the user logs in, the user’s profile disk will be mounted to that VM and the user will be redirected so as to connect to the session host. After that, the user will be logged on and he can see his or her data from the profile disk.
+
+![FlowChart](./imagenes/FlowChart.png)
+
+If you want to learn more...
+
+- [integrated Windows authentication](https://technet.microsoft.com/en-us/library/cc732841(v=ws.11&#41;.aspx)
