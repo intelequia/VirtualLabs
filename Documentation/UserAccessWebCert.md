@@ -1,5 +1,5 @@
 ## **Steps for the installation of the certificate for access from the web**
-After successful deployment, the URL for the Remote Desktop Gateway (RDGW) and RDWeb site will be https://%gwdnsLabelPrefix%.%location%.cloudapp.azure.com/RDWeb. A self-signed certificate will be used for the deployment. To prevent certificate mismatch issues when connecting using a self-signed certificate, the certificate will need to be installed on the local client machines 'Trusted Root' certificate store. Best practice for a production environment is to configure the deployment to use a trusted certificate.
+After successful deployment, the URL for the Remote Desktop Gateway (RDGW) and RDWeb site will be on https://{your-dns-label-prefix}.{location-of-resource-group}.cloudapp.azure.com/RDWeb. A self-signed certificate will be used for the deployment. To prevent certificate mismatch issues when connecting using a self-signed certificate, the certificate will need to be installed on the local client machines 'Trusted Root' certificate store. Best practice for a production environment is to configure the deployment to use a trusted certificate.
 
 ![step 1](./imagenes/certificado1.png)
 ![step 2](./imagenes/certificado2.png)
