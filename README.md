@@ -33,7 +33,7 @@ Follow these steps to deploy a Virtual Labs enviroment in your own subscription.
 
 First, make sure you meet the following requirements:
 
-* An active Azure subscription. It can be a Tria Account, MSDN or Retail Subscription.
+* An active Azure subscription. It can be a Trial Account, MSDN or Retail Subscription.
 * Available quota of cores
   * The basic deployment requires 6 VMs. When you select the size of these virtual machines, you must ensure that the total cores in the deployment do not exceed the subscription capacity (Remember: the default quota of cores is 20).
   
