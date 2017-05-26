@@ -98,12 +98,12 @@
         }
       }
     ],
-    "Template.Uri": "https://github.com/intelequia/VirtualLabs/Templates/",
+    "Template.Uri": "https://raw.githubusercontent.com/intelequia/VirtualLabs/master/Templates/",
     "DCTemplate.Uri":"[concat(variables('Template.Uri'), 'rds-ad-azuredeploy.json')]",
     "FETemplate.Uri":"[concat(variables('Template.Uri'), 'rds-fe-azuredeploy.json')]",
     "BETemplate.Uri":"[concat(variables('Template.Uri'), 'rds-be-azuredeploy.json')]",
     "SHTemplate.Uri":"[concat(variables('Template.Uri'), 'rds-sh-azuredeploy.json')]",
-    "Configuration.Uri": "https://github.com/intelequia/VirtualLabs/Configuration/",
+    "Configuration.Uri": "https://raw.githubusercontent.com/intelequia/VirtualLabs/master/Configuration/",
     "DCSubdeploymentName": "DCSubdeployment",
     "FESubdeploymentName": "FESubdeployment",
     "BESubdeploymentName": "BESubdeployment",
