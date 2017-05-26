@@ -47,12 +47,12 @@ First, make sure you meet the following requirements:
 
 1. Click on this button: [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fintelequia%2FVirtualLabs%2Fmaster%2Fsimple-architecture%2Frds-base-azuredeploy.json)
 2. Fill the form. You can get info about each field if you hold the cursor over the info icon.
- * Choose your subscription and create or select an existing resource group.
- * Set the admin credentials. An member of Administrator Group account will be created. Remember this credentials to access to VMs after de deployment.
- * Set the name of the domain that will be created and that all the VMs will join it.
- * Set a prefix for the gateway public DNS. The fqdn will look something like 'contoso-gateway.cloudapp.azure.com'.
- * Select the size for Frontend and Backend VMs.
- * Select the size for Session Host VMs.
+   * Choose your subscription and create or select an existing resource group.
+   * Set the admin credentials. An member of Administrator Group account will be created. Remember this credentials to access to VMs after de deployment.
+   * Set the name of the domain that will be created and that all the VMs will join it.
+   * Set a prefix for the gateway public DNS. The fqdn will look something like 'contoso-gateway.cloudapp.azure.com'.
+   * Select the size for Frontend and Backend VMs.
+   * Select the size for Session Host VMs.
 
 ### Architecture
 
