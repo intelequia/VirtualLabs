@@ -45,9 +45,7 @@ First, make sure you meet the following requirements:
 
 ### Deployment 
 
-1. Click on this button: <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fintelequia%2FVirtualLabs%2Fmaster%2Fsimple-architecture%2Frds-base-azuredeploy.json" target="_blank">
-    <img src="http://azuredeploy.net/deploybutton.png"/>
-</a>
+1. Click on this button: [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fintelequia%2FVirtualLabs%2Fmaster%2Fsimple-architecture%2Frds-base-azuredeploy.json)
 2. Fill the form. You can get info about each field if you hold the cursor over the info icon.
   * Choose your subscription and create or select an existing resource group.
   * Set the admin credentials. An member of Administrator Group account will be created. Remember this credentials to access to VMs after de deployment.
