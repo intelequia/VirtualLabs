@@ -70,7 +70,7 @@ For more information (https://docs.microsoft.com/en-us/windows-server/remote/rem
 
 ### Prerequisites
 
-The set of softwares and subscriptions for usage and deployment of the project are mentioned in the [requirements](Documentation/Requirement.md) document.
+The set of softwares and subscriptions for usage and deployment of the project are mentioned in the [requirements](Documentation/Requirements.md) document.
 
 ### Architecture
 
