@@ -1,5 +1,4 @@
-
-# Requierements
+# Requirements
 
 ## ** Create a Microsoft Azure Subscription **
 * Trial Account 
