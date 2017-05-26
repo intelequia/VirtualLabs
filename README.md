@@ -27,19 +27,38 @@ Universidad Pontificia Comillas-ICAI-ICADE [Madrid]
 
 ## Getting Started
 
-[Welcome!](Documentation/GettingStarted.md)  These instructions will help you to understand Remote Desktop Services solution and set up the project components for cloud deployment. 
+Follow these steps to deploy a Virtual Labs enviroment in your own subscription.
 
 ### Requirements
 
-The set of softwares and subscriptions for usage and deployment of the project are mentioned in the [requirements](Documentation/Requirements.md) document.
+First, make sure you meet the following requirements:
+
+* An active Azure subscription. It can be a Tria Account, MSDN or Retail Subscription.
+* Available quota of cores
+  * The basic deployment requires 6 VMs. When you select the size of these virtual machines, you must ensure that the total cores in the deployment do not exceed the subscription capacity (Remember: the default quota of cores is 20).
+  
+#### Considerations for production environments
+
+* 1 to 10 users per core for Session Host, 200 users per core for Web/Gateway
+* Set aside 1 or 2 cores for SMs for other roles
+* A-Series VM most cost-effective (D-Series if you need SSDs, but typically don’t)
+
+### Deployment 
+
+1. Click on this button: <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fintelequia%2FVirtualLabs%2Fmaster%2Fsimple-architecture%2Frds-base-azuredeploy.json" target="_blank">
+    <img src="http://azuredeploy.net/deploybutton.png"/>
+</a>
+2. Fill the form. You can get info about each field if you hold the cursor over the info icon.
+  * Choose your subscription and create or select an existing resource group.
+  * Set the admin credentials. An member of Administrator Group account will be created. Remember this credentials to access to VMs after de deployment.
+  * Set the name of the domain that will be created and that all the VMs will join it.
+  * Set a prefix for the gateway public DNS. The fqdn will look something like 'contoso-gateway.cloudapp.azure.com'.
+  * Select the size for Frontend and Backend VMs.
+  * Select the size for Session Host VMs.
 
 ### Architecture
 
 Refer to the [solution architecture](Documentation/SolutionArchitecture.md) guide. 
-
-### Deployment 
-
-Refer to the [deployment](Documentation/DeploymentSteps.md) guide. 
 
 ## License
 
