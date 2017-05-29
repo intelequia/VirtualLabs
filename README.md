@@ -49,7 +49,7 @@ First, make sure you meet the following requirements:
 2. Fill the form. You can get info about each field if you hold the cursor over the info icon.
    * Choose your subscription and create or select an existing resource group.
    * Set the admin credentials. A member of Administrator Group account will be created. Remember this credentials to access to VMs after de deployment.
-   * Set the name of the domain that will be created and that all the VMs will join it. The domain name must contain '.'(dot) like 'example.local'
+   * Set the name of the domain that will be created and that all the VMs will join it. The domain name must contain a dot '.' like 'mydomain.local'.
    * Set a prefix for the gateway public DNS. The fqdn will look something like 'contoso-gateway.cloudapp.azure.com'.
    * Select the size for Frontend, and Backend and Session Host VMs. [Check which VM sizes are available by region](https://azure.microsoft.com/en-us/regions/services/).
 3. Now wait for the green check in the notifications hub. It will take **1 to 2 hours** for completes the resources deployment.
