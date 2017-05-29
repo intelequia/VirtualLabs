@@ -11,13 +11,13 @@
     "adminPassword": {
       "type": "securestring",
       "metadata": {
-        "description": "Administrator Password"
+        "description": "Administrator Password. The supplied password must be between 8-123 characters long and must satisfy at least 3 of password complexity requirements from the following: contains an uppercase character, contains a lowercase character, contains a numeric digit or contains a special character."
       }
     },
     "domainName": {
       "type": "string",
       "metadata": {
-        "description": "The FQDN of the AD Domain created. The domain name must contain '.'(dot) like 'example.local'."
+        "description": "The FQDN of the AD Domain created. The domain name must contain a dot '.' like 'example.local'."
       }
     },
     "dnsLabelPrefix": {
