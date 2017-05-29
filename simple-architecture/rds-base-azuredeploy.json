@@ -17,7 +17,7 @@
     "domainName": {
       "type": "string",
       "metadata": {
-        "description": "The FQDN of the AD Domain created "
+        "description": "The FQDN of the AD Domain created. The domain name must contain '.'(dot) like 'example.local'."
       }
     },
     "dnsLabelPrefix": {
