@@ -1,4 +1,4 @@
-#RDS Flow Chart
+# RDS Flow Chart
 
 Let's now talk about what happens when a user accesses the RDS infrastructure.:
 
@@ -17,4 +17,4 @@ Right after this and right before the user logs in, the user’s profile disk wi
 
 If you want to learn more...
 
-- [integrated Windows authentication](https://technet.microsoft.com/en-us/library/cc732841(v=ws.11&#41;.aspx)
+[Integrated Windows authentication](https://technet.microsoft.com/en-us/library/cc732841(v=ws.11).aspx)
