@@ -51,8 +51,7 @@ First, make sure you meet the following requirements:
    * Set the admin credentials. A member of Administrator Group account will be created. Remember this credentials to access to VMs after de deployment.
    * Set the name of the domain that will be created and that all the VMs will join it.
    * Set a prefix for the gateway public DNS. The fqdn will look something like 'contoso-gateway.cloudapp.azure.com'.
-   * Select the size for Frontend and Backend VMs. [Check which VM sizes are available by region](https://azure.microsoft.com/en-us/regions/services/).
-   * Select the size for Session Host VMs. [Check which VM sizes are available by region](https://azure.microsoft.com/en-us/regions/services/).
+   * Select the size for Frontend, and Backend and Session Host VMs. [Check which VM sizes are available by region](https://azure.microsoft.com/en-us/regions/services/).
 3. Now wait for the green check in the notifications hub. It will take **1 to 2 hours** for completes the resources deployment.
 4. Export and copy self-signed certificates to client computers
    * A self-signed certificate have been used for the deployment. This certificate will need to be installed on the local client machines. See how do it following the steps described in [this guide](Documentation/UserAccessWebCert.md). 
