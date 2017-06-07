@@ -1,20 +1,17 @@
 # Deployment
 ## Admin Guide
 ---
-* [Introduction](./BusinessNeeds.md)
+* [Introduction](./README.md)
 * [Architecture](./ArchitectureDiagram.md)
 * Deployment
-    * [Requirements](./requirements.md)
-    * [Deployment Steps](./DeploymentSteps.md)
-    * [Admin Guide](./AdminGuide.md)
-        * [RemoteApp Session Host](./RemoteAppSessionHost.md)
-        * [Virtual Desktop Session Host](./VirtualDesktopSessionHost.md)
-        * **[Azure Automation](./AzureAutomation.md)** <--
-        * [Storage Spaces Direct (S2D) Scale-Out File Server (SOFS) Cluster](./S2DFileServer.md)
-    * [User Guide](./UserGuide.md)
-* [Customize and personalize](./GPU&RemoteFX.md)
-* Back to [Readme](README.md)
----
+    * **[Requirements](./Requirements.md)** <--
+    * [Basic deployment](./Deployment-basic.md)
+    * [High Availability deployment](./Deployment-HA.md)
+    * **[Storage Spaces Direct (S2D) Scale-Out File Server (SOFS) Cluster](./S2DFileServer.md)** <--
+    * [User Access Web Certificate](./UserAccessWebCert.md)
+    * [AzureAutomation](./AzureAutomation.md)
+* [Admin Guide](./RemoteDesktopRemoteApp.md)
+--- 
 
 ### Storage Spaces Direct (S2D) Scale-Out File Server (SOFS) Cluster
 ---
@@ -31,7 +28,8 @@ We are going to deploy this architecture from the last template published from M
 
 2. After the deployment you can use the path that show the output of the previous deploy.
     * Output example: **\\\\sofsName\\shareName**
-
+    
+    ![TemplateOutpu](./images/fileserver2.png)
 3. In Server Manager, click Remote Desktop Services > Collections > **Your Collection** > TASKS > "Edit Properties".
     
     ![EditProperties](./images/fileserver3.png)
@@ -40,3 +38,16 @@ We are going to deploy this architecture from the last template published from M
     * In the **Location** field, we have to use the deploy output. Example: **\\\\sofsName\\shareName**
     
     ![userprofiledisk](./images/fileserver4.png)
+    
+---
+* [Introduction](./README.md)
+* [Architecture](./ArchitectureDiagram.md)
+* Deployment
+    * **[Requirements](./Requirements.md)** <--
+    * [Basic deployment](./Deployment-basic.md)
+    * [High Availability deployment](./Deployment-HA.md)
+    * **[Storage Spaces Direct (S2D) Scale-Out File Server (SOFS) Cluster](./S2DFileServer.md)** <--
+    * [User Access Web Certificate](./UserAccessWebCert.md)
+    * [AzureAutomation](./AzureAutomation.md)
+* [Admin Guide](./RemoteDesktopRemoteApp.md)
+--- 
