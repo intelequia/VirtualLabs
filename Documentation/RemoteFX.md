@@ -1,5 +1,6 @@
 # Deployment
 ## Admin Guide
+
 ---
 * [Introduction](./README.md)
 * [Architecture](./ArchitectureDiagram.md)
@@ -9,7 +10,7 @@
     * [Certificate instalation](./UserAccessWebCert.md)
     * **[RemoteFX](./RemoteFX.md)**<--
     * [Create Aditional Collection](./CreateSessionCollection.md)
-* [User Guide](./UserGuide.md)
+* [User Guide](./UserGuide.md) 
 ---
 
 ### RemoteFX
@@ -49,6 +50,19 @@ Microsoft® RemoteFX™ enables access to the Host de sesión de Escritorio remo
 8. Select "Show only on 2" in the Multiple display and "Apply".
 
     ![](./images/remote7.png)
+    
+    
+9. Group Policy settings
+   * The following Group Policy settings allow you to configure RemoteFX within your environment:   
+
+| Group Policy setting name | Location | Description | Default value |
+| :---  | :---  | :--- | :---  |
+| Configure RemoteFX        | Computer Configuration\Administrative Templates\Windows Components\Remote Desktop Services\Remote Desktop Session Host \Remote Session Environment | Enable and disable RemoteFX. | Not configured |
+| Optimize visual experience when using RemoteFX | Computer Configuration\Administrative Templates\Windows Components\Remote Desktop Services\Remote Desktop Session Host \Remote Session Environment | Specify the visual experience that users will have when connecting to RemoteFX-enabled sessions. | Not configured |
+|Allow RDP redirection of other supported RemoteFX USB devices from this computer | Computer Configuration\Administrative Templates\Windows Components\Remote Desktop Services\Remote Desktop Connection Client\RemoteFX USB Redirection | Permit redirection of supported RemoteFX USB devices. | Not configured |
+| Do not allow supported Plug and Play device redirection | Computer Configuration\Administrative Templates\Windows Components\Remote Desktop Services\Remote Desktop Session Host \Device and Resource Redirection | Disable Plug and Play device redirection and RemoteFX USB redirection. | Not configured |
+
+
 ---
 * [Introduction](./README.md)
 * [Architecture](./ArchitectureDiagram.md)
