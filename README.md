@@ -68,7 +68,7 @@ Click: [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://por
 ---
 * Introduction
     * **[Business needs](./README.md)** <--
-    * [Cost simulator](./Cost%20%Simulator/Virtual-Lab-Cost-Simulator.md)
+    * [Cost simulator](./Cost%20Simulator/Virtual-Lab-Cost-Simulator.md)
 * [Architecture](./Documentation/ArchitectureDiagram.md)
 * [Deployment](./Documentation/Deployment-basic.md)
 * [Admin Guide](./Documentation/RemoteAppSessionHost.md)
