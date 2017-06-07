@@ -5,7 +5,7 @@
     * **[Costs simulator](./Virtual-Lab-Cost-Simulator.md)** <--
 * [Architecture](/Documentation/ArchitectureDiagram.md)
 * [Deployment](/Documentation/Deployment-basic.md)
-* [Admin Guide](./RemoteDesktopRemoteApp.md)
+* [Admin Guide](/Documentation/RemoteDesktopRemoteApp.md)
 ---
 
 # Virtual Lab costs simulator tool
@@ -103,5 +103,5 @@ We have added a simple exchange rate conversion. Feel free to use your own excha
     * **[Costs simulator](./Virtual-Lab-Cost-Simulator.md)** <--
 * [Architecture](/Documentation/ArchitectureDiagram.md)
 * [Deployment](/Documentation/Deployment-basic.md)
-* [Admin Guide](./RemoteDesktopRemoteApp.md)
+* [Admin Guide](/Documentation/RemoteDesktopRemoteApp.md)
 ---
