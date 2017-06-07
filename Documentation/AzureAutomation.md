@@ -7,6 +7,7 @@
     * [Requirements](./Requirements.md)
     * [Basic deployment](./Deployment-basic.md)
     * [High Availability deployment](./Deployment-HA.md)
+    * [Storage Spaces Direct (S2D) Scale-Out File Server (SOFS) Cluster](./S2DFileServer.md)
     * [User Access Web Certificate](./UserAccessWebCert.md)
     * **[AzureAutomation](./AzureAutomation.md)** <--
 * [Admin Guide](./RemoteDesktopRemoteApp.md)
@@ -17,7 +18,7 @@ Microsoft Azure Automation provides a way for users to automate the manual tasks
 #### Create Automation Account
 1. Click New > Add Automation Account
 2. Fill the gaps and select suitable options for your environment  
-![Add Automation Account](./images/AddAutomationAccount.png)
+![Add Automation Account](./images/addAutomationAccount.png)
 
 In order to authenticate runbooks which admin ARM resources, we need a Run As Account. ![Select Azure Run As Account](./images/CreateAzureRunAsAccount.png)  
 When you create an Automation account in the Azure portal, you automatically create two authentication entities:
@@ -89,6 +90,7 @@ If you want to know more..
     * [Requirements](./Requirements.md)
     * [Basic deployment](./Deployment-basic.md)
     * [High Availability deployment](./Deployment-HA.md)
+    * [Storage Spaces Direct (S2D) Scale-Out File Server (SOFS) Cluster](./S2DFileServer.md)
     * [User Access Web Certificate](./UserAccessWebCert.md)
     * **[AzureAutomation](./AzureAutomation.md)** <--
 * [Admin Guide](./RemoteDesktopRemoteApp.md)
