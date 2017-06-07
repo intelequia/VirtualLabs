@@ -14,11 +14,22 @@ After successful deployment, the URL for the Remote Desktop Gateway (RDGW) and R
 
 1. Run Internet Explorer in administrator mode, browse to URL.
    * *https://**{your-dns-label-prefix}**.**{location-of-resource-group}**.cloudapp.azure.com*
+   
+   ![](./images/cert1.png)
+   ![](./images/cert2.png)
 2. In address bar, click on 'Certificate Error' then on 'View Certificates'
+   
+   ![](./images/cert3.png)
 3. Select 'Install Certificate...'
+
+   ![](./images/cert4.png)
 4. Store location is 'Local Machine'
+   
+   ![](./images/cert5.png)
 5. Select 'Browse' for 'Place all certificates in the following store'
 6. Select 'Trusted Root Certification Authorities'
+   
+   ![](./images/cert6.png)
 7. Now you can logon with the domain credentials in *https://**{your-dns-label-prefix}**.**{location-of-resource-group}**.cloudapp.azure.com/RDWeb*
 8. Launch the collection.
 ---
