@@ -908,7 +908,7 @@
           ]
         },
         "protectedSettings": {
-          "commandToExecute": "[Concat('powershell.exe -ExecutionPolicy Unrestricted -File', 'ConfigureFE-HA.ps1',' ','-username \"',parameters('adminusername'),'\" ', '-password \"',parameters('adminpassword'),'\" ','-BrokerServer \"',concat('RDBE-VM01.',parameters('domainName')),'\" ','-WebURL \"',reference(variables('FESubdeploymentName')).outputs.publicFQDN.value,'\" ','-Domainname \"',parameters('domainName'),'\" ','-DomainNetbios \"',split(parameters('domainName'),'.')[0],'\" ','-numberofwebServers ',2)]"
+          "commandToExecute": "[Concat('powershell.exe -ExecutionPolicy Unrestricted -file ', 'ConfigureFE-HA.ps1',' ','-username \"',parameters('adminusername'),'\" ', '-password \"',parameters('adminpassword'),'\" ','-BrokerServer \"',concat('RDBE-VM01.',parameters('domainName')),'\" ','-WebURL \"',reference(variables('FESubdeploymentName')).outputs.publicFQDN.value,'\" ','-Domainname \"',parameters('domainName'),'\" ','-DomainNetbios \"',split(parameters('domainName'),'.')[0],'\" ','-numberofwebServers ',2)]"
         }
       }
     },
