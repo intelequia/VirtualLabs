@@ -1,7 +1,8 @@
 # **Microsoft Azure Virtual Labs (RDS on Azure)**
 
-![RDS](./Documentation/imagenes/rds-overview.png)
+![RDS](./Documentation/images/rds-overview.png)
 
+## Business needs
 **"Bring your own device" and mobility** are two of the concepts that are transforming the way that Education is evolving in the era of the cloud. Increasingly, teachers are demanding to IT teams in schools and universities to have their resources, such as applications, available regardless the location they teach at. Besides, students also require to access those kinds of educational applications at any time, at any place and with any device (smartphone, tablet, home PC) they are connecting from.
 
 In this scenario, where the IT teams are facing **the new way of teaching and learning** , they are struggling to find the right solution which meet the demands coming from students and teachers and simultaneously, comply with the security policies of their current technological environment.
@@ -19,65 +20,56 @@ Due to the applications used by elementary students are extremely different than
 
 The customer´s testimony below summarised precisely what the **Virtual Lab in Azure** has supposed to them:
 
-&quot;_In our decision-making process, we considered positively that with Azure we were able to pay just for the real usage as the solution was adapted to our calendars and academic timetables. Besides, it was 25% cheaper than the competitor´s solutions and it met our needs about to customize deployments of the virtual lab. On top of that, we could turn on/off services on the go and the integration with our local IT environment was also met_.&quot;
+*In our decision-making process, we considered positively that with Azure we were able to pay just for the real usage as the solution was adapted to our calendars and academic timetables. Besides, it was 25% cheaper than the competitor´s solutions and it met our needs about to customize deployments of the virtual lab. On top of that, we could turn on/off services on the go and the integration with our local IT environment was also met.*
 
 Luis Fco. Blanco
 IT Director
 Universidad Pontificia Comillas-ICAI-ICADE [Madrid]
 
-## Getting Started
+## Deployment
 
-Follow these steps to deploy a Virtual Labs enviroment in your own subscription.
+## Basic deployment
+Click: [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fintelequia%2FVirtualLabs%2Fmaster%2FDeploy%2FArchitecture-basic%2Frds-base-azuredeploy.json)
 
-### Requirements
-
-First, make sure you meet the following requirements:
-
-* An active Azure subscription. It can be a Trial Account, MSDN or Retail Subscription.
-* Available quota of cores
-  * The basic deployment requires 6 VMs. When you select the size of these virtual machines, you must ensure that the total cores in the deployment do not exceed the subscription capacity (Remember: the default quota of cores is 20). [Learn how to check your subscription VM core usage here](https://blogs.msdn.microsoft.com/madan/2016/10/25/check-azure-resource-manager-arm-vm-core-storage-usage-using-powershell/).
-  
-#### Considerations for production environments
-
-* 1 to 10 users per core for Session Host, 200 users per core for Web/Gateway
-* Set aside 1 or 2 cores for SMs for other roles
-* A-Series VM most cost-effective (D-Series if you need SSDs, but typically don’t)
-
-### Deployment 
-
-1. Click on this button: [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fintelequia%2FVirtualLabs%2Fmaster%2Fsimple-architecture%2Frds-base-azuredeploy.json)
-2. Fill the form. You can get info about each field if you hold the cursor over the info icon.
+1. Fill the form. You can get info about each field if you hold the cursor over the info icon.
    * Choose your subscription and create or select an existing resource group.
    * Set the admin credentials. A member of Administrator Group account will be created. Remember this credentials to access to VMs after de deployment. The supplied password must be between 8-123 characters long and must satisfy at least 3 of password complexity requirements from the following: contains an uppercase character, contains a lowercase character, contains a numeric digit or contains a special character.
    * Set the name of the domain that will be created and that all the VMs will join it. The domain name must contain a dot '.' like 'mydomain.local'.
    * Set a prefix for the gateway public DNS. The fqdn will look something like 'contoso-gateway.cloudapp.azure.com'.
    * Select the size for Frontend, and Backend and Session Host VMs. [Check which VM sizes are available by region](https://azure.microsoft.com/en-us/regions/services/).
-3. Now wait for the green check in the notifications hub. It will take **1 to 2 hours** for completes the resources deployment.
-4. Export and copy self-signed certificates to client computers
+2. Now wait for the green check in the notifications hub. It will take **1 to 2 hours** for completes the resources deployment.
+3. Export and copy self-signed certificates to client computers
    * A self-signed certificate have been used for the deployment. This certificate will need to be installed on the local client machines. See how do it following the steps described in [this guide](Documentation/UserAccessWebCert.md). 
-5. Configure Session Collection
+4. Configure Session Collection
    * Set Domain Users as user group
-   
-### Architecture
+   * [Publish your first remoteApp ](./Documentation/RemoteDesktopRemoteApp.md)
+5. Connect to the deployment through RD Web Access and RD Gateway
+    * Enter the DNS name for the deployment in your browser https:// **{your-dns-label-prefix}** . **{location-of-resource-group}** .cloudapp.azure.com/RDWeb
 
-Refer to the [solution architecture](Documentation/SolutionArchitecture.md) guide. 
+## High Availability deployment
+Click: [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fintelequia%2FVirtualLabs%2Fmaster%2FDeploy%2FArchitecture-HA%2Frds-base-azuredeploy.json)
 
-## Learn more about RDS and roles
+1. Fill the form. You can get info about each field if you hold the cursor over the info icon.
+   * Choose your subscription and create or select an existing resource group.
+   * Set the admin credentials. A member of Administrator Group account will be created. Remember this credentials to access to VMs after de deployment. The supplied password must be between 8-123 characters long and must satisfy at least 3 of password complexity requirements from the following: contains an uppercase character, contains a lowercase character, contains a numeric digit or contains a special character.
+   * Set the name of the domain that will be created and that all the VMs will join it. The domain name must contain a dot '.' like 'mydomain.local'.
+   * Set a prefix for the gateway public DNS. The fqdn will look something like 'contoso-gateway.cloudapp.azure.com'.
+   * Select the size for Frontend and Backend VMs. [Check which VM sizes are available by region](https://azure.microsoft.com/en-us/regions/services/).
+   * Select the size and how many Session Host with GPU VM will be deployed.
+   * Select the size and how many Session Host with CPU VM will be deployed.
+2. Now wait for the green check in the notifications hub. It will take nearly **2 hours** for completes the resources deployment.
+3. Configure Session Collection
+   * Set Domain Users as user group
+   * [Publish your first remoteApp ](./Documentation/RemoteDesktopRemoteApp.md)
+4. Connect to the deployment through RD Web Access and RD Gateway
+    * Enter the DNS name for the deployment in your browser https:// **{your-dns-label-prefix}** . **{location-of-resource-group}** .cloudapp.azure.com/RDWeb
 
-* [Web Access (RDWeb)](https://technet.microsoft.com/en-us/library/cc731923)
-* [Gateway (RDGW)](https://technet.microsoft.com/en-us/library/cc731150)
-* [Connection Broker (RDCB)](https://technet.microsoft.com/en-us/library/cc772245)
-* [Licensing (RDLic)](https://technet.microsoft.com/en-us/library/cc725933)
-* [Session Host (RDSH)](https://technet.microsoft.com/en-us/library/cc742822)
-
-## License
-
-The MIT License (MIT)
-
-Copyright (c) 2016 Microsoft
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+5. It would be interesting to extend your deployment with a [Storage Spaces Direct (S2D) Scale-Out File Server (SOFS) cluster](./Documentation/S2DFileServer.md)
+---
+* Introduction
+    * **[Business needs](./README.md)** <--
+    * [Costs simulator](./Cost Simulator/Virtual-Lab-Cost-Simulator.md)
+* [Architecture](./Documentation/ArchitectureDiagram.md)
+* [Deployment](./Documentation/Deployment-basic.md)
+* [Admin Guide](./Documentation/RemoteAppSessionHost.md)
+---

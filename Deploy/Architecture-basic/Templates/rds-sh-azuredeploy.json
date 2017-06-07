@@ -1,0 +1,274 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "storageAccountName": {
+        "type": "string",
+        "metadata": {
+            "description": "The name of the Storage Account"
+        }
+    },
+    "vnetName": {
+        "type": "string",
+        "metadata": {
+            "description": "The name of the vNet"
+        }
+    },
+    "subnetName": {
+        "type": "string",
+        "metadata": {
+            "description": "The name of the Frontend Subnet"
+        }
+    },
+    "adminUsername": {
+        "type": "string",
+        "metadata": {
+            "description": "Admin username"
+        }
+    },
+    "adminPassword": {
+        "type": "string",
+        "metadata": {
+            "description": "Admin password"
+        }
+    },
+    "domainName": {
+        "type": "string",
+        "metadata": {
+            "description": "Domain name"
+        }
+    },
+     "VMSize":{
+        "type": "string",
+        "metadata": {
+            "description": "VMs Size"
+        }
+    },
+     "Configuration.Uri":{
+        "type": "string",
+        "metadata": {
+            "description": "Configuration Uri"
+        }
+    }
+  },
+  "variables": {
+    "AVSetName": "VM-SHAVSet",
+    "SH01Name": "RDSH-VM01",
+    "SH01NicName": "[concat(variables('SH01Name'),'-nic')]",
+    "SH02Name": "RDSH-VM02",
+    "SH02NicName": "[concat(variables('SH02Name'),'-nic')]",
+    "SHVMSize": "[parameters('VMSize')]",
+    "subnetId": "[resourceId('Microsoft.Network/virtualNetworks/subnets', parameters('vnetName'), parameters('subnetName'))]",
+    "imagePublisher": "MicrosoftWindowsServer",
+    "imageOffer": "WindowsServer",
+    "imageSKU": "2016-Datacenter"
+  },
+  "resources": [
+    {
+      "name": "[variables('AVSetName')]",
+      "type": "Microsoft.Compute/availabilitySets",
+      "apiVersion": "2015-06-15",
+      "location": "[resourceGroup().location]",
+      "properties": {
+        "platformUpdateDomainCount": 5,
+        "platformFaultDomainCount": 3
+      } 
+    },
+    {
+      "name": "[variables('SH01NicName')]",
+      "type": "Microsoft.Network/networkInterfaces",
+      "apiVersion": "2016-10-01",
+      "location": "[resourceGroup().location]",
+      "properties": {
+        "ipConfigurations": [
+          {
+            "name": "ipconfig1",
+            "properties": {
+              "privateIPAllocationMethod": "Dynamic",
+              "subnet": {
+                "id": "[variables('subnetId')]"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "[variables('SH02NicName')]",
+      "type": "Microsoft.Network/networkInterfaces",
+      "apiVersion": "2016-10-01",
+      "location": "[resourceGroup().location]",
+      "properties": {
+        "ipConfigurations": [
+          {
+            "name": "ipconfig1",
+            "properties": {
+              "privateIPAllocationMethod": "Dynamic",
+              "subnet": {
+                "id": "[variables('subnetId')]"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "[variables('SH01Name')]",
+      "type": "Microsoft.Compute/virtualMachines",
+      "apiVersion": "2015-06-15",
+      "location": "[resourceGroup().location]",
+      "dependsOn": [
+        "[resourceId('Microsoft.Compute/availabilitySets', variables('AVSetName'))]",
+        "[resourceId('Microsoft.Network/networkInterfaces',variables('SH01NicName'))]"
+        ],
+      "properties": {
+        "hardwareProfile": {
+          "vmSize": "[variables('SHVMSize')]"
+        },
+        "availabilitySet": {
+          "id": "[resourceId('Microsoft.Compute/availabilitySets', variables('AVSetName'))]"
+        },
+        "osProfile": {
+          "computerName": "[variables('SH01Name')]",
+          "adminUsername": "[parameters('adminUsername')]",
+          "adminPassword": "[parameters('adminPassword')]"
+        },
+        "storageProfile": {
+          "imageReference": {
+            "publisher": "[variables('imagePublisher')]",
+            "offer": "[variables('imageOffer')]",
+            "sku": "[variables('imageSKU')]",
+            "version": "latest"
+          },
+          "osDisk": {
+            "name": "osdisk",
+            "vhd": {
+              "uri": "[concat(reference(resourceId('Microsoft.Storage/storageAccounts/', parameters('storageAccountName')), '2016-01-01').primaryEndpoints.blob,'vhds/',variables('SH01Name'),'-osdisk.vhd')]"
+            },       
+            "caching": "ReadWrite",
+            "createOption": "FromImage"
+          }
+        },
+        "networkProfile": {
+          "networkInterfaces": [
+            {
+              "id": "[resourceId('Microsoft.Network/networkInterfaces',variables('SH01NicName'))]"
+            }
+          ]
+        }
+      },
+      "resources": [
+        {
+          "apiVersion": "2015-06-15",
+          "type": "extensions",
+          "name": "InitializeSH01",
+          "location": "[resourceGroup().location]",
+          "dependsOn": [
+            "[resourceId('Microsoft.Compute/virtualMachines', variables('SH01Name'))]"
+          ],
+          "properties": {
+            "publisher": "Microsoft.Powershell",
+            "type": "DSC",
+            "typeHandlerVersion": "2.11",
+            "autoUpgradeMinorVersion": true,
+            "settings": {
+              "ModulesUrl": "[concat(parameters('Configuration.Uri'),'ConfigurationSH.zip')]",
+              "ConfigurationFunction": "ConfigurationSH.ps1\\RDSH",
+              "Properties": {
+                "DomainName": "[parameters('domainName')]",
+                "AdminCreds": {
+                  "UserName": "[parameters('adminUsername')]",
+                  "Password": "PrivateSettingsRef:AdminPassword"
+                }
+              }
+            },
+            "protectedSettings": {
+              "Items": {
+                "AdminPassword": "[parameters('adminPassword')]"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "[variables('SH02Name')]",
+      "type": "Microsoft.Compute/virtualMachines",
+      "apiVersion": "2015-06-15",
+      "location": "[resourceGroup().location]",
+      "dependsOn": [
+        "[resourceId('Microsoft.Compute/availabilitySets', variables('AVSetName'))]",
+        "[resourceId('Microsoft.Network/networkInterfaces',variables('SH02NicName'))]"
+        ],
+      "properties": {
+        "hardwareProfile": {
+          "vmSize": "[variables('SHVMSize')]"
+        },
+        "availabilitySet": {
+          "id": "[resourceId('Microsoft.Compute/availabilitySets', variables('AVSetName'))]"
+        },
+        "osProfile": {
+          "computerName": "[variables('SH02Name')]",
+          "adminUsername": "[parameters('adminUsername')]",
+          "adminPassword": "[parameters('adminPassword')]"
+        },
+        "storageProfile": {
+          "imageReference": {
+            "publisher": "[variables('imagePublisher')]",
+            "offer": "[variables('imageOffer')]",
+            "sku": "[variables('imageSKU')]",
+            "version": "latest"
+          },
+          "osDisk": {
+            "name": "osdisk",
+            "vhd": {
+              "uri": "[concat(reference(resourceId('Microsoft.Storage/storageAccounts/', parameters('storageAccountName')), '2016-01-01').primaryEndpoints.blob,'vhds/',variables('SH02Name'),'-osdisk.vhd')]"
+            },       
+            "caching": "ReadWrite",
+            "createOption": "FromImage"
+          }
+        },
+        "networkProfile": {
+          "networkInterfaces": [
+            {
+              "id": "[resourceId('Microsoft.Network/networkInterfaces',variables('SH02NicName'))]"
+            }
+          ]
+        }
+      },
+      "resources": [
+        {
+          "apiVersion": "2015-06-15",
+          "type": "extensions",
+          "name": "InitializeSH02",
+          "location": "[resourceGroup().location]",
+          "dependsOn": [
+            "[resourceId('Microsoft.Compute/virtualMachines', variables('SH02Name'))]"
+          ],
+          "properties": {
+            "publisher": "Microsoft.Powershell",
+            "type": "DSC",
+            "typeHandlerVersion": "2.11",
+            "autoUpgradeMinorVersion": true,
+            "settings": {
+              "ModulesUrl": "[concat(parameters('Configuration.Uri'),'ConfigurationSH.zip')]",
+              "ConfigurationFunction": "ConfigurationSH.ps1\\RDSH",
+              "Properties": {
+                "DomainName": "[parameters('domainName')]",
+                "AdminCreds": {
+                  "UserName": "[parameters('adminUsername')]",
+                  "Password": "PrivateSettingsRef:AdminPassword"
+                }
+              }
+            },
+            "protectedSettings": {
+              "Items": {
+                "AdminPassword": "[parameters('adminPassword')]"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

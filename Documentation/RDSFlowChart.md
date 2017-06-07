@@ -1,6 +1,17 @@
-# RDS Flow Chart
+# Architecture
+---
+* [Introduction](/README.md)
+* Architecture
+    * [Architecture Diagrams](./ArchitectureDiagram.md)
+    * [Other Architectures](./OtherArchitectures.md)
+    * **[Architecture FlowChart](./RDSFlowChart.md)** <--
+* [Deployment](./Deployment-basic.md)
+* [Admin Guide](./RemoteAppSessionHost.md)
+---
 
-Let's now talk about what happens when a user accesses the RDS infrastructure.:
+##RDS Flow Chart
+
+Let's now talk about what happens when a user accesses the RDS infrastructure:
 
 He will first come in through the public internet and connect to the RDWeb server. 
 The user will visualize a user interface in which he will enter his credentials.
@@ -13,8 +24,18 @@ The broker will first decide which session host the user will connect to (in thi
 
 Right after this and right before the user logs in, the user’s profile disk will be mounted to that VM and the user will be redirected so as to connect to the session host. After that, the user will be logged on and he can see his or her data from the profile disk.
 
-![FlowChart](./imagenes/FlowChart.png)
+![FlowChart](./images/FlowChart.png)
 
 If you want to learn more...
 
-[Integrated Windows authentication](https://technet.microsoft.com/en-us/library/cc732841(v=ws.11).aspx)
+- [integrated Windows authentication](https://technet.microsoft.com/en-us/library/cc732841)
+
+---
+* [Introduction](/README.md)
+* Architecture
+    * [Architecture Diagrams](./ArchitectureDiagram.md)
+    * [Other Architectures](./OtherArchitectures.md)
+    * **[Architecture FlowChart](./RDSFlowChart.md)** <--
+* [Deployment](./Deployment-basic.md)
+* [Admin Guide](./RemoteAppSessionHost.md)
+---
