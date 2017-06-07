@@ -11,7 +11,7 @@
 
 # Virtual Lab costs simulator tool
 
-[Download the virtual lab costs simulator tool (Virtual Lab Cost Simulator v1.2.xlsx)](Virtual%20Lab%20Cost%20Simulator%20v1.2.xlsx)
+[Download the virtual lab costs simulator tool (Virtual Lab Cost Simulator v1.2.xlsx)](https://github.com/intelequia/VirtualLabs/blob/master/Cost%20Simulator/Virtual%20Lab%20Cost%20Simulator%20v1.2.xlsx?raw=true)
 
 Once we have introduced the concept of lab virtualization on a public cloud, there is an important question to answer: how much would cost this solution?
 
