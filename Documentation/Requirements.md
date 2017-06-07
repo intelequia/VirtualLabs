@@ -10,6 +10,7 @@
     * [User Access Web Certificate](./UserAccessWebCert.md)
     * [AzureAutomation](./AzureAutomation.md)
 * [Admin Guide](./RemoteDesktopRemoteApp.md)
+* [User Guide](./UserGuide.md)
 ---
 ## Requirements
 ### Create a Microsoft Azure Subscription
@@ -32,7 +33,7 @@ First, make sure you meet the following requirements:
     * [Basic deployment](./Deployment-basic.md)
     * [High Availability deployment](./Deployment-HA.md)
     * [Storage Spaces Direct (S2D) Scale-Out File Server (SOFS) Cluster](./S2DFileServer.md)
-    * [User Access Web Certificate](./UserAccessWebCert.md)
     * [AzureAutomation](./AzureAutomation.md)
 * [Admin Guide](./RemoteDesktopRemoteApp.md)
+* [User Guide](./UserGuide.md)
 ---

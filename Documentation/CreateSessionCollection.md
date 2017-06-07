@@ -1,20 +1,16 @@
 # Deployment
 ## Admin Guide
 ---
-* [Introduction](./BusinessNeeds.md)
+* [Introduction](./README.md)
 * [Architecture](./ArchitectureDiagram.md)
-* Deployment
-    * [Requirements](./requirements.md)
-    * [Deployment Steps](./DeploymentSteps.md)
-    * Admin Guide
-        * **[Session Collection](./CreateSessionCollection.md)** <--
-        * [RemoteApp Session Host](./RemoteAppSessionHost.md)
-        * [Azure Automation](./AzureAutomation.md)
-    * [User Guide](./UserGuide.md)
-* [Customize and personalize](./GPU&RemoteFX.md)
-* Back to [Readme](README.md)
+* [Deployment](./Deployment-basic.md)
+* Admin Guide
+    * [Remote Desktop - RemoteApp](./RemoteDesktopRemoteApp.md)
+    * [Certificate instalation](./UserAccessWebCert.md)
+    * [RemoteFX](./RemoteFX.md)
+    * **[Create Aditional Collection](./CreateSessionCollection.md)**<--
+* [User Guide](./UserGuide.md)
 ---
-
 ### Create a session collection
 
 In Server Manager, click Remote Desktop Services > Collections > Tasks > Create Session Collection.
@@ -24,3 +20,14 @@ In Server Manager, click Remote Desktop Services > Collections > Tasks > Create
 3. Set a Maximum size, and then click Create.
 
 Note that a Session Collection can be two different types. When no Remote Apps are published, the Session Collection is of type "Remote Desktop" which basically means that only full desktop is published. As soon as you have successfully published your first Remote App, the Session Collection is changes to type "Remote App Programs" and the full desktop is no longer published, as a mix in one Session Collection is not supported. 
+---
+* [Introduction](./README.md)
+* [Architecture](./ArchitectureDiagram.md)
+* [Deployment](./Deployment-basic.md)
+* Admin Guide
+    * [Remote Desktop - RemoteApp](./RemoteDesktopRemoteApp.md)
+    * [Certificate instalation](./UserAccessWebCert.md)
+    * [RemoteFX](./RemoteFX.md)
+    * **[Create Aditional Collection](./CreateSessionCollection.md)**<--
+* [User Guide](./UserGuide.md)
+---

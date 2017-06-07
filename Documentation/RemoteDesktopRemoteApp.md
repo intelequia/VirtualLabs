@@ -7,6 +7,9 @@
 * Admin Guide
     * **[Remote Desktop - RemoteApp](./RemoteDesktopRemoteApp.md)**<--
     * [Certificate instalation](./UserAccessWebCert.md)
+    * [RemoteFX](./RemoteFX.md)
+    * [Create Aditional Collection](./CreateSessionCollection.md)
+* [User Guide](./UserGuide.md)
 ---
 ### Remote Desktop
 
@@ -34,4 +37,7 @@ if you want to know more..
 * Admin Guide
     * **[Remote Desktop - RemoteApp](./RemoteDesktopRemoteApp.md)**<--
     * [Certificate instalation](./UserAccessWebCert.md)
+    * [RemoteFX](./RemoteFX.md)
+    * [Create Aditional Collection](./CreateSessionCollection.md)
+* [User Guide](./UserGuide.md)
 ---

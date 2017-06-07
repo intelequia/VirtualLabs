@@ -3,16 +3,14 @@
 ---
 * [Introduction](./README.md)
 * [Architecture](./ArchitectureDiagram.md)
-* Deployment
-    * [Requirements](./Requirements.md)
-    * [Basic deployment](./Deployment-basic.md)
-    * [High Availability deployment](./Deployment-HA.md)
-    * [Storage Spaces Direct (S2D) Scale-Out File Server (SOFS) Cluster](./S2DFileServer.md)
-    * [User Access Web Certificate](./UserAccessWebCert.md)
-    * [AzureAutomation](./AzureAutomation.md)
-    * **[RemoteFX](./RemoteFX.md)** <--
-* [Admin Guide](./RemoteDesktopRemoteApp.md)
---- 
+* [Deployment](./Deployment-basic.md)
+* Admin Guide
+    * [Remote Desktop - RemoteApp](./RemoteDesktopRemoteApp.md)
+    * [Certificate instalation](./UserAccessWebCert.md)
+    * **[RemoteFX](./RemoteFX.md)**<--
+    * [Create Aditional Collection](./CreateSessionCollection.md)
+* [User Guide](./UserGuide.md)
+---
 
 ### RemoteFX
 
@@ -54,13 +52,11 @@ Microsoft® RemoteFX™ enables access to the Host de sesión de Escritorio remo
 ---
 * [Introduction](./README.md)
 * [Architecture](./ArchitectureDiagram.md)
-* Deployment
-    * [Requirements](./Requirements.md)
-    * [Basic deployment](./Deployment-basic.md)
-    * [High Availability deployment](./Deployment-HA.md)
-    * [Storage Spaces Direct (S2D) Scale-Out File Server (SOFS) Cluster](./S2DFileServer.md)
-    * [User Access Web Certificate](./UserAccessWebCert.md)
-    * [AzureAutomation](./AzureAutomation.md)
-    * **[RemoteFX](./RemoteFX.md)** <--
-* [Admin Guide](./RemoteDesktopRemoteApp.md)
---- 
+* [Deployment](./Deployment-basic.md)
+* Admin Guide
+    * [Remote Desktop - RemoteApp](./RemoteDesktopRemoteApp.md)
+    * [Certificate instalation](./UserAccessWebCert.md)
+    * **[RemoteFX](./RemoteFX.md)**<--
+    * [Create Aditional Collection](./CreateSessionCollection.md)
+* [User Guide](./UserGuide.md)
+---

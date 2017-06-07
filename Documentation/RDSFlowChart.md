@@ -7,6 +7,7 @@
     * **[Architecture FlowChart](./RDSFlowChart.md)** <--
 * [Deployment](./Deployment-basic.md)
 * [Admin Guide](./RemoteAppSessionHost.md)
+* [User Guide](./UserGuide.md)
 ---
 
 ##RDS Flow Chart
@@ -38,4 +39,5 @@ If you want to learn more...
     * **[Architecture FlowChart](./RDSFlowChart.md)** <--
 * [Deployment](./Deployment-basic.md)
 * [Admin Guide](./RemoteAppSessionHost.md)
+* [User Guide](./UserGuide.md)
 ---

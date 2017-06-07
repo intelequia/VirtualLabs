@@ -6,8 +6,10 @@
     * [Requirements](./Requirements.md)
     * [Basic deployment](./Deployment-basic.md)
     * **[High Availability deployment](./Deployment-HA.md)** <--
-    * [Azure Automation](./AzureAutomation.md)
+    * [Storage Spaces Direct (S2D) Scale-Out File Server (SOFS) Cluster](./S2DFileServer.md)
+    * [AzureAutomation](./AzureAutomation.md)
 * [Admin Guide](./RemoteDesktopRemoteApp.md)
+* [User Guide](./UserGuide.md)
 ---
 ## High Availability deployment
 
@@ -78,6 +80,8 @@ If you want to learn more...
     * [Requirements](./Requirements.md)
     * [Basic deployment](./Deployment-basic.md)
     * **[High Availability deployment](./Deployment-HA.md)** <--
-    * [Azure Automation](./AzureAutomation.md)
+    * [Storage Spaces Direct (S2D) Scale-Out File Server (SOFS) Cluster](./S2DFileServer.md)
+    * [AzureAutomation](./AzureAutomation.md)
 * [Admin Guide](./RemoteDesktopRemoteApp.md)
+* [User Guide](./UserGuide.md)
 ---

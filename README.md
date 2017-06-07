@@ -72,4 +72,5 @@ Click: [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://por
 * [Architecture](./Documentation/ArchitectureDiagram.md)
 * [Deployment](./Documentation/Deployment-basic.md)
 * [Admin Guide](./Documentation/RemoteDesktopRemoteApp.md)
+* [User Guide](./Documentation/UserGuide.md)
 ---
