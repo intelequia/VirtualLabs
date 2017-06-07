@@ -4,7 +4,7 @@
 * [Introduction](./README.md)
 * [Architecture](./ArchitectureDiagram.md)
 * Deployment
-    * **[Requirements](./Requirements.md)** <--
+    * [Requirements](./Requirements.md)
     * [Basic deployment](./Deployment-basic.md)
     * [High Availability deployment](./Deployment-HA.md)
     * **[Storage Spaces Direct (S2D) Scale-Out File Server (SOFS) Cluster](./S2DFileServer.md)** <--
@@ -34,7 +34,7 @@ We are going to deploy this architecture from the last template published from M
     
     ![EditProperties](./images/fileserver3.png)
 4. In the the "User Profile Disks".
-    * Select **"Enable user profiles disks**
+    * Select **Enable user profiles disks**
     * In the **Location** field, we have to use the deploy output. Example: **\\\\sofsName\\shareName**
     
     ![userprofiledisk](./images/fileserver4.png)
@@ -43,7 +43,7 @@ We are going to deploy this architecture from the last template published from M
 * [Introduction](./README.md)
 * [Architecture](./ArchitectureDiagram.md)
 * Deployment
-    * **[Requirements](./Requirements.md)** <--
+    * [Requirements](./Requirements.md)
     * [Basic deployment](./Deployment-basic.md)
     * [High Availability deployment](./Deployment-HA.md)
     * **[Storage Spaces Direct (S2D) Scale-Out File Server (SOFS) Cluster](./S2DFileServer.md)** <--
