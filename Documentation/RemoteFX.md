@@ -7,7 +7,7 @@
     * [Remote Desktop - RemoteApp](./RemoteDesktopRemoteApp.md)
     * **[RemoteFX](./RemoteFX.md)**<--
     * [Azure AD Proxy](./AzureADProxy.md)
-    * [Create Aditional Collection](./CreateSessionCollection.md)
+    * [Create Additional Collection](./CreateSessionCollection.md)
 * [User Guide](./UserAccess.md) 
 ---
 
@@ -68,6 +68,6 @@ Microsoft® RemoteFX™ enables access to the Host de sesión de Escritorio remo
     * [Remote Desktop - RemoteApp](./RemoteDesktopRemoteApp.md)
     * **[RemoteFX](./RemoteFX.md)**<--
     * [Azure AD Proxy](./AzureADProxy.md)
-    * [Create Aditional Collection](./CreateSessionCollection.md)
+    * [Create Additional Collection](./CreateSessionCollection.md)
 * [User Guide](./UserAccess.md) 
 ---

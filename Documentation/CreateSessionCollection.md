@@ -8,13 +8,13 @@
     * [Remote Desktop - RemoteApp](./RemoteDesktopRemoteApp.md)
     * [RemoteFX](./RemoteFX.md)
     * [Azure AD Proxy](./AzureADProxy.md)
-    * **[Create Aditional Collection](./CreateSessionCollection.md)**<--
+    * **[Create Additional Collection](./CreateSessionCollection.md)**<--
 * [User Guide](./UserAccess.md) 
 ---
 ### Create a session collection
 
 In Server Manager, click Remote Desktop Services > Collections > Tasks > Create Session Collection.  
-![User Guide](./Images/CreateCollection.png)
+![User Guide](./Images/CreateCollection.PNG)
 1. Enter a collection Name (for example, ContosoDesktop).  
 2. Select an RD Session Host Server (RDSH-VM01), accept the default user groups (Contoso\Domain Users), and enter the Universal Naming Convention (UNC) Path to the user profile disks created above (\RDBE-VM01\UserDisks).
 3. Set a Maximum size, and then click Create.
@@ -29,6 +29,6 @@ Note that a Session Collection can be two different types. When no Remote Apps a
     * [Remote Desktop - RemoteApp](./RemoteDesktopRemoteApp.md)
     * [RemoteFX](./RemoteFX.md)
     * [Azure AD Proxy](./AzureADProxy.md)
-    * **[Create Aditional Collection](./CreateSessionCollection.md)**<--
+    * **[Create Additional Collection](./CreateSessionCollection.md)**<--
 * [User Guide](./UserAccess.md) 
 ---
