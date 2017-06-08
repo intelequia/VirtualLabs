@@ -1,10 +1,12 @@
 # User Guide
 ---
-* [Introduction](/README.md)
+* [Introduction](./README.md)
 * [Architecture](./ArchitectureDiagram.md)
 * [Deployment](./Deployment-basic.md)
 * [Admin Guide](./RemoteDesktopRemoteApp.md)
-* **[User Guide](./UserGuide.md)** <--
+* User Guide
+    * **[User Access](./UserAccess.md)**<--
+    * [Certificate installation](./UserAccessWebCert.md)
 ---
 Remote Desktop give us a full desktop experience; while RemoteApp enable us to make programs that are accessed remotely through Remote Desktop Services appear as if they are running on the end user's local computer.
 
@@ -16,9 +18,11 @@ Sign in with a domain user account (like **yourdomain**\user).
 Under RemoteApp and Desktops select one of the collections created for this deployment, (run the .RDP file that has just been download if you are using other browser) and then click Connect.  
 ![Select Collection](./images/Collections.png)
 ---
-* [Introduction](/README.md)
+* [Introduction](./README.md)
 * [Architecture](./ArchitectureDiagram.md)
 * [Deployment](./Deployment-basic.md)
 * [Admin Guide](./RemoteDesktopRemoteApp.md)
-* **[User Guide](./UserGuide.md)** <--
+* User Guide
+    * **[User Access](./UserAccess.md)**<--
+    * [Certificate installation](./UserAccessWebCert.md)
 ---

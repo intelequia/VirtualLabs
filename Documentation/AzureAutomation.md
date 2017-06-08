@@ -8,9 +8,9 @@
     * [Basic deployment](./Deployment-basic.md)
     * [High Availability deployment](./Deployment-HA.md)
     * [Storage Spaces Direct (S2D) Scale-Out File Server (SOFS) Cluster](./S2DFileServer.md)
-    * [User Access Web Certificate](./UserAccessWebCert.md)
     * **[AzureAutomation](./AzureAutomation.md)** <--
 * [Admin Guide](./RemoteDesktopRemoteApp.md)
+* [User Guide](./UserAccess.md)
 ---
 ### Azure Automation
 Microsoft Azure Automation provides a way for users to automate the manual tasks that are performed in a cloud environment.
@@ -94,4 +94,5 @@ If you want to know more..
     * [User Access Web Certificate](./UserAccessWebCert.md)
     * **[AzureAutomation](./AzureAutomation.md)** <--
 * [Admin Guide](./RemoteDesktopRemoteApp.md)
+* [User Guide](./UserAccess.md)
 ---

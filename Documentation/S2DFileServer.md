@@ -10,7 +10,7 @@
     * **[Storage Spaces Direct (S2D) Scale-Out File Server (SOFS) Cluster](./S2DFileServer.md)** <--
     * [AzureAutomation](./AzureAutomation.md)
 * [Admin Guide](./RemoteDesktopRemoteApp.md)
-* [User Guide](./UserGuide.md)
+* [User Guide](./UserAccess.md)
 --- 
 
 ### Storage Spaces Direct (S2D) Scale-Out File Server (SOFS) Cluster
@@ -49,5 +49,5 @@ We are going to deploy this architecture from the last template published from M
     * **[Storage Spaces Direct (S2D) Scale-Out File Server (SOFS) Cluster](./S2DFileServer.md)** <--
     * [AzureAutomation](./AzureAutomation.md)
 * [Admin Guide](./RemoteDesktopRemoteApp.md)
-* [User Guide](./UserGuide.md)
+* [User Guide](./UserAccess.md)
 --- 

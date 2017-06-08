@@ -9,7 +9,7 @@
     * [Storage Spaces Direct (S2D) Scale-Out File Server (SOFS) Cluster](./S2DFileServer.md)
     * [AzureAutomation](./AzureAutomation.md)
 * [Admin Guide](./RemoteDesktopRemoteApp.md)
-* [User Guide](./UserGuide.md)
+* [User Guide](./UserAccess.md)
 ---
 ## High Availability deployment
 
@@ -83,5 +83,5 @@ If you want to learn more...
     * [Storage Spaces Direct (S2D) Scale-Out File Server (SOFS) Cluster](./S2DFileServer.md)
     * [AzureAutomation](./AzureAutomation.md)
 * [Admin Guide](./RemoteDesktopRemoteApp.md)
-* [User Guide](./UserGuide.md)
+* [User Guide](./UserAccess.md)
 ---

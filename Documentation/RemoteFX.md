@@ -1,19 +1,17 @@
-# Deployment
-## Admin Guide
-
+# Admin Guide
 ---
 * [Introduction](./README.md)
 * [Architecture](./ArchitectureDiagram.md)
 * [Deployment](./Deployment-basic.md)
 * Admin Guide
     * [Remote Desktop - RemoteApp](./RemoteDesktopRemoteApp.md)
-    * [Certificate instalation](./UserAccessWebCert.md)
     * **[RemoteFX](./RemoteFX.md)**<--
+    * [Azure AD Proxy](./AzureADProxy.md)
     * [Create Aditional Collection](./CreateSessionCollection.md)
-* [User Guide](./UserGuide.md) 
+* [User Guide](./UserAccess.md) 
 ---
 
-### RemoteFX
+## RemoteFX
 
 Microsoft® RemoteFX™ enables access to the Host de sesión de Escritorio remoto server from a wide range of client devices including rich clients, thin clients, and ultrathin clients. It also ensures lower bandwidth than Windows Server® 2008 R2 when transferring rich graphics applications. When used with a hardware-based application-specific integrated circuit (ASIC), the server running Windows Server 2008 R2 with SP1 is capable of hosting more sessions than previous versions.
 
@@ -62,15 +60,14 @@ Microsoft® RemoteFX™ enables access to the Host de sesión de Escritorio remo
 |Allow RDP redirection of other supported RemoteFX USB devices from this computer | Computer Configuration\Administrative Templates\Windows Components\Remote Desktop Services\Remote Desktop Connection Client\RemoteFX USB Redirection | Permit redirection of supported RemoteFX USB devices. | Not configured |
 | Do not allow supported Plug and Play device redirection | Computer Configuration\Administrative Templates\Windows Components\Remote Desktop Services\Remote Desktop Session Host \Device and Resource Redirection | Disable Plug and Play device redirection and RemoteFX USB redirection. | Not configured |
 
-
 ---
 * [Introduction](./README.md)
 * [Architecture](./ArchitectureDiagram.md)
 * [Deployment](./Deployment-basic.md)
 * Admin Guide
     * [Remote Desktop - RemoteApp](./RemoteDesktopRemoteApp.md)
-    * [Certificate instalation](./UserAccessWebCert.md)
     * **[RemoteFX](./RemoteFX.md)**<--
+    * [Azure AD Proxy](./AzureADProxy.md)
     * [Create Aditional Collection](./CreateSessionCollection.md)
-* [User Guide](./UserGuide.md)
+* [User Guide](./UserAccess.md) 
 ---

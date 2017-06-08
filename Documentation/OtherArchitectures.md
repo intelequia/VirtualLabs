@@ -7,7 +7,7 @@
     * [Architecture FlowChart](./RDSFlowChart.md)
 * [Deployment](./Deployment-basic.md)
 * [Admin Guide](./RemoteAppSessionHost.md)
-* [User Guide](./UserGuide.md)
+* [User Guide](./UserAccess.md)
 ---
 
 ## Other Architectures
@@ -60,6 +60,6 @@ If you want to learn more
     * [Architecture FlowChart](./RDSFlowChart.md)
 * [Deployment](./Deployment-basic.md)
 * [Admin Guide](./RemoteAppSessionHost.md)
-* [User Guide](./UserGuide.md)
+* [User Guide](./UserAccess.md)
 ---
 

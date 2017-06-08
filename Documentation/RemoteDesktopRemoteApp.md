@@ -6,10 +6,10 @@
 * [Deployment](./Deployment-basic.md)
 * Admin Guide
     * **[Remote Desktop - RemoteApp](./RemoteDesktopRemoteApp.md)**<--
-    * [Certificate instalation](./UserAccessWebCert.md)
     * [RemoteFX](./RemoteFX.md)
-    * [Create Aditional Collection](./CreateSessionCollection.md)
-* [User Guide](./UserGuide.md)
+    * [Azure AD Proxy](./AzureADProxy.md)
+    * [Create Additional Collection](./CreateSessionCollection.md)
+* [User Guide](./UserAccess.md)
 ---
 ### Remote Desktop
 
@@ -23,7 +23,7 @@ In Server Manager, click Remote Desktop Services > Collections > **Your Collecti
 ![Collection Path](./images/CollectionDemosRemoteApp.png)  
 
 Click Task > Publish RemoteApp programs  
-![Collection Path](./images/RemoteAppPrograms.png)  
+![Publish RemoteApp programs](./images/RemoteAppPrograms.png)  
 Follow the wizard selecting suitable programs that will be published. After the wizard is finished, we have the RemoteApps available in RD WebAccess.
 
 if you want to know more..
@@ -36,8 +36,8 @@ if you want to know more..
 * [Deployment](./Deployment-basic.md)
 * Admin Guide
     * **[Remote Desktop - RemoteApp](./RemoteDesktopRemoteApp.md)**<--
-    * [Certificate instalation](./UserAccessWebCert.md)
     * [RemoteFX](./RemoteFX.md)
-    * [Create Aditional Collection](./CreateSessionCollection.md)
-* [User Guide](./UserGuide.md)
+    * [Azure AD Proxy](./AzureADProxy.md)
+    * [Create Additional Collection](./CreateSessionCollection.md)
+* [User Guide](./UserAccess.md)
 ---
