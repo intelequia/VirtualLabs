@@ -1,6 +1,6 @@
 # Admin Guide
 ---
-* [Introduction](./README.md)
+* [Introduction](/README.md)
 * [Architecture](./ArchitectureDiagram.md)
 * [Deployment](./Deployment-basic.md)
 * Admin Guide
@@ -61,7 +61,7 @@ Microsoft® RemoteFX™ enables access to the Host de sesión de Escritorio remo
 | Do not allow supported Plug and Play device redirection | Computer Configuration\Administrative Templates\Windows Components\Remote Desktop Services\Remote Desktop Session Host \Device and Resource Redirection | Disable Plug and Play device redirection and RemoteFX USB redirection. | Not configured |
 
 ---
-* [Introduction](./README.md)
+* [Introduction](/README.md)
 * [Architecture](./ArchitectureDiagram.md)
 * [Deployment](./Deployment-basic.md)
 * Admin Guide

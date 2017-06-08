@@ -1,6 +1,6 @@
 # Deployment
 ---
-* [Introduction](./README.md)
+* [Introduction](/README.md)
 * [Architecture](./ArchitectureDiagram.md)
 * Deployment
     * [Requirements](./Requirements.md)
@@ -71,7 +71,7 @@ If you want to learn more...
 * [Session Host (RDSH)](https://technet.microsoft.com/en-us/library/cc742822)
 
 ---
-* [Introduction](./README.md)
+* [Introduction](/README.md)
 * [Architecture](./ArchitectureDiagram.md)
 * Deployment
     * [Requirements](./Requirements.md)

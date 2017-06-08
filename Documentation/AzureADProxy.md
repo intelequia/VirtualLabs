@@ -1,6 +1,6 @@
 # Admin Guide
 ---
-* [Introduction](./README.md)
+* [Introduction](/README.md)
 * [Architecture](./ArchitectureDiagram.md)
 * [Deployment](./Deployment-basic.md)
 * Admin Guide
@@ -84,7 +84,7 @@ If you want to know more..
 [Publish applications using Azure AD Application Proxy](https://docs.microsoft.com/en-us/azure/active-directory/application-proxy-publish-azure-portal)  
 
 ---
-* [Introduction](./README.md)
+* [Introduction](/README.md)
 * [Architecture](./ArchitectureDiagram.md)
 * [Deployment](./Deployment-basic.md)
 * Admin Guide

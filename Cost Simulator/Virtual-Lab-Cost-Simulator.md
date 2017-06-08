@@ -6,7 +6,7 @@
 * [Architecture](/Documentation/ArchitectureDiagram.md)
 * [Deployment](/Documentation/Deployment-basic.md)
 * [Admin Guide](/Documentation/RemoteDesktopRemoteApp.md)
-* [User Guide](./Documentation/UserGuide.md)
+* [User Guide](./Documentation/UserAccess.md)
 ---
 
 # Virtual Lab costs simulator tool
@@ -105,5 +105,5 @@ We have added a simple exchange rate conversion. Feel free to use your own excha
 * [Architecture](/Documentation/ArchitectureDiagram.md)
 * [Deployment](/Documentation/Deployment-basic.md)
 * [Admin Guide](/Documentation/RemoteDesktopRemoteApp.md)
-* [User Guide](./Documentation/UserGuide.md)
+* [User Guide](./Documentation/UserAccess.md)
 ---

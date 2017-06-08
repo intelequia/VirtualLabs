@@ -1,6 +1,6 @@
 # Deployment
 ---
-* [Introduction](./README.md)
+* [Introduction](/README.md)
 * [Architecture](./ArchitectureDiagram.md)
 * Deployment
     * **[Requirements](./Requirements.md)** <--
@@ -26,7 +26,7 @@ First, make sure you meet the following requirements:
 * Set aside 1 or 2 cores for SMs for other roles
 * A-Series VM most cost-effective (D-Series if you need SSDs, but typically don’t)
 ---
-* [Introduction](./README.md)
+* [Introduction](/README.md)
 * [Architecture](./ArchitectureDiagram.md)
 * Deployment
     * **[Requirements](./Requirements.md)** <--

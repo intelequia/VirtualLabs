@@ -67,7 +67,7 @@ Click: [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://por
 5. It would be interesting to extend your deployment with a [Storage Spaces Direct (S2D) Scale-Out File Server (SOFS) cluster](./Documentation/S2DFileServer.md)
 ---
 * Introduction
-    * **Business needs** <--
+    * **[Business needs](./README.md)** <--
     * [Cost simulator](./Cost%20Simulator/Virtual-Lab-Cost-Simulator.md)
 * [Architecture](./Documentation/ArchitectureDiagram.md)
 * [Deployment](./Documentation/Deployment-basic.md)

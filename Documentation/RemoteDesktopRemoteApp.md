@@ -1,7 +1,7 @@
 # Deployment
 ## Admin Guide
 ---
-* [Introduction](./README.md)
+* [Introduction](/README.md)
 * [Architecture](./ArchitectureDiagram.md)
 * [Deployment](./Deployment-basic.md)
 * Admin Guide
@@ -31,7 +31,7 @@ if you want to know more..
 [Publishing RemoteApps in Windows Server 2012](https://social.technet.microsoft.com/wiki/contents/articles/10817.publishing-remoteapps-in-windows-server-2012.aspx)
 
 ---
-* [Introduction](./README.md)
+* [Introduction](/README.md)
 * [Architecture](./ArchitectureDiagram.md)
 * [Deployment](./Deployment-basic.md)
 * Admin Guide

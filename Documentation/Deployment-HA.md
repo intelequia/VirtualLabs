@@ -1,6 +1,6 @@
 # Deployment
 ---
-* [Introduction](./README.md)
+* [Introduction](/README.md)
 * [Architecture](./ArchitectureDiagram.md)
 * Deployment
     * [Requirements](./Requirements.md)
@@ -74,7 +74,7 @@ If you want to learn more...
 * [Scale-Out File Server (SOFS)](https://technet.microsoft.com/en-us/library/hh831349)
 
 ---
-* [Introduction](./README.md)
+* [Introduction](/README.md)
 * [Architecture](./ArchitectureDiagram.md)
 * Deployment
     * [Requirements](./Requirements.md)

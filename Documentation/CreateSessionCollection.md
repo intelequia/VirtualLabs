@@ -1,7 +1,7 @@
 # Deployment
 ## Admin Guide
 ---
-* [Introduction](./README.md)
+* [Introduction](/README.md)
 * [Architecture](./ArchitectureDiagram.md)
 * [Deployment](./Deployment-basic.md)
 * Admin Guide
@@ -22,7 +22,7 @@ In Server Manager, click Remote Desktop Services > Collections > Tasks > Create
 Note that a Session Collection can be two different types. When no Remote Apps are published, the Session Collection is of type "Remote Desktop" which basically means that only full desktop is published. As soon as you have successfully published your first Remote App, the Session Collection is changes to type "Remote App Programs" and the full desktop is no longer published, as a mix in one Session Collection is not supported.
 
 ---
-* [Introduction](./README.md)
+* [Introduction](/README.md)
 * [Architecture](./ArchitectureDiagram.md)
 * [Deployment](./Deployment-basic.md)
 * Admin Guide

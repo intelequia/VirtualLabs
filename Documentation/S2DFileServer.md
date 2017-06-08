@@ -1,7 +1,7 @@
 # Deployment
 ## Admin Guide
 ---
-* [Introduction](./README.md)
+* [Introduction](/README.md)
 * [Architecture](./ArchitectureDiagram.md)
 * Deployment
     * [Requirements](./Requirements.md)
@@ -40,7 +40,7 @@ We are going to deploy this architecture from the last template published from M
     ![userprofiledisk](./images/fileserver4.png)
     
 ---
-* [Introduction](./README.md)
+* [Introduction](/README.md)
 * [Architecture](./ArchitectureDiagram.md)
 * Deployment
     * [Requirements](./Requirements.md)

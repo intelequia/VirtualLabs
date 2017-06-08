@@ -1,7 +1,7 @@
 # Deployment
 ## Admin Guide
 ---
-* [Introduction](https://github.com/intelequia/VirtualLabs/blob/master/README.md)
+* [Introduction](/README.md)
 * [Architecture](./ArchitectureDiagram.md)
 * Deployment
     * [Requirements](./Requirements.md)
@@ -84,7 +84,7 @@ If you want to know more..
 [Azure Automation](https://docs.microsoft.com/en-us/azure/automation/)
 
 ---
-* [Introduction](https://github.com/intelequia/VirtualLabs/blob/master/README.md)
+* [Introduction](/README.md)
 * [Architecture](./ArchitectureDiagram.md)
 * Deployment
     * [Requirements](./Requirements.md)

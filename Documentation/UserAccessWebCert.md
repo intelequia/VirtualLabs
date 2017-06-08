@@ -1,6 +1,6 @@
 # Admin Guide
 ---
-* [Introduction](./README.md)
+* [Introduction](/README.md)
 * [Architecture](./ArchitectureDiagram.md)
 * [Deployment](./Deployment-basic.md)
 * [Admin Guide](./RemoteDesktopRemoteApp.md)
@@ -34,7 +34,7 @@ After successful deployment, the URL for the Remote Desktop Gateway (RDGW) and R
 7. Now you can logon with the domain credentials in *https://**{your-dns-label-prefix}**.**{location-of-resource-group}**.cloudapp.azure.com/RDWeb*
 8. Launch the collection.
 ---
-* [Introduction](./README.md)
+* [Introduction](/README.md)
 * [Architecture](./ArchitectureDiagram.md)
 * [Deployment](./Deployment-basic.md)
 * [Admin Guide](./RemoteDesktopRemoteApp.md)
