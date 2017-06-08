@@ -29,7 +29,7 @@ Your end users need to use Internet Explorer and enable the RDS ActiveX add-on w
 5. Follow the instructions in the wizard to install.  
 During installation, you are prompted to register the connector with the Application Proxy of your Azure AD tenant.
 Provide your Azure AD global administrator credentials. Your global administrator tenant may be different from your Microsoft Azure credentials.  
-![Azure AD Application Proxy Connector Wizard](./images/AADApplicationProxyConnector.png)  
+![Azure AD Application Proxy Connector Wizard](./images/AADApplicationProxyConnectorInstaller.png)  
 Make sure the admin who registers the connector is in the same directory where you enabled the Application Proxy service. For example, if the tenant domain is contoso.com, the admin should be admin@contoso.com or any other alias on that domain.
 
 When the installation completes, two new services are added to your server:
