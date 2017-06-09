@@ -9,6 +9,7 @@
     * [RemoteFX](./RemoteFX.md)
     * [Azure AD Proxy](./AzureADProxy.md)
     * **[Create Additional Collection](./CreateSessionCollection.md)**<--
+    * [Backups adn Restore](./BackupsAndRestore.md)
 * [User Guide](./UserAccess.md) 
 ---
 ### Create a session collection

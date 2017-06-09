@@ -1,4 +1,18 @@
-# Backup and Recovery Strategy
+# Admin Guide
+---
+* [Introduction](/README.md)
+* [Architecture](./ArchitectureDiagram.md)
+* [Deployment](./Deployment-basic.md)
+* Admin Guide
+    * [Remote Desktop - RemoteApp](./RemoteDesktopRemoteApp.md)
+    * [RemoteFX](./RemoteFX.md)
+    * [Azure AD Proxy](./AzureADProxy.md)
+    * [Create Additional Collection](./CreateSessionCollection.md)
+    * **[Backups adn Restore](./BackupsAndRestore.md)**<--
+* [User Guide](./UserAccess.md) 
+---
+
+## Backup and Recovery Strategy
 
 When our RDS environment is deployed is recommendable to define a strategy for backup and recovery to be ready for a possible data loss.
 
@@ -6,11 +20,11 @@ In this type of environments, with a complex architecture, is necessary to consi
 
 In this short guide, we will take a quick look of the generic backup and recovery strategy for Azure VMs, and then, we will see in detail the considerations that we must consider for some of the elements of the architecture.
 
-## Generic strategy for Backup and Recovery of Virtual Machines
+### Generic strategy for Backup and Recovery of Virtual Machines
 
 The RDS environment we are implementing in this repo is mainly composed of Virtual Machines (VM) with assigned RDS roles. So, to define a strategy for backup and restore generic VMs is essential.
 
-### Backups
+#### Backups
 
 In Azure Resources Manager, we can use Recovery Services vault to backup all our Virtual Machines. To activate the creation of backups we must enter on the Azure Portal and select the target VM.
 
@@ -30,7 +44,7 @@ The most important parts of this section are:
 - Alerts and Events: Here are the notifications of the service. Is a nice place to be informed of the services status and backups task issues.
 - Backups Items: Here we can check the VMs includes in this vault and access individually to each of them.
 
-### Recovery
+#### Recovery
 
 In the previous section, we saw how to configure the backups policies for our virtual machines. Now, we are going to see how to use these backups to restore one of them.
 In the same tab of backups of the target VM we can see that after the firsts completed backups tasks, the button “Restore VM” is now active. To restore the VM, click on it.
@@ -55,7 +69,7 @@ We must select a new name for the VM, a Virtual Network, Subnet and Storage Acco
 
 ![](./images/backups-8.png)
 
-## Revovery of Domain Controllers
+### Revovery of Domain Controllers
 
 The recovery of Active Directory Domain Controllers on Virtual Machines is a supported scenario in Azure Backup. Active Directory Restore Mode (necessary for some cases) is also available in Azure, so, all the Active Directory recovery scenarios are viable.
 
@@ -71,15 +85,15 @@ If we are trying to recovery a DC which is the last in the forest, is recommenda
 
 If we are trying to recovery a DC which is not the last in the forest, we can restore it as any VM.
 
-## SQL Database
+### SQL Database
 
-### Backups
+#### Backups
 
 Azure SQL Database Service automatically creates a database backups and at no additional charge.
 
 Depending of the tier of the database the retention period is from 7 days to 35 days. It is possible to enlarge this period configuring the long-term retention policy. In this case, there is an additional cost associated.
 
-### Restore
+#### Restore
 
 Now, let see how to use one of the automatically created restore points to restore a SQL Database.
 
@@ -93,7 +107,7 @@ Well, in this window you can select the restore point that you want use to recov
 
 And it is all. Wait few minutes and your database status will be restored.
 
-## Restore VMs with special network configuration
+### Restore VMs with special network configuration
 
 In this scenario, we have some special network configuration for some VMs, e.g., RDFE-VM01 and RDFE-VM02 are behind a Load Balancer. 
 In this case, if we need to restore a one of these VMs, we must use Powershell to create them from the disks restored. You can know how do that [here](https://docs.microsoft.com/es-es/azure/virtual-machines/windows/quick-create-powershell).
@@ -101,7 +115,7 @@ After restore a VM, we must do some steps:
 * **Static IP**: Some VMs in our RDS environment have static IPs. When a VMs is restored, the static IP is reset to a dynamic one to avoid conflicts. We must change it manually after restore.
 * **Availability sets**: For load balancing, some VMs are in an availability set. In this case, how we said before, is recommended do a disk restore and then then add the availability set when create the VM via Powershell.
 
-# Links
+### Links
 
 * [Generic backup VMs](https://docs.microsoft.com/en-us/azure/backup/backup-azure-arm-vms)
 * [Generic restore VMs](https://docs.microsoft.com/en-us/azure/backup/backup-azure-arm-restore-vms)
