@@ -23,9 +23,6 @@ Connect by Remote Desktop to each N-series VM. Download, extract, and install th
 NVIDIA Tesla drivers for NC VMs (Tesla K80)
 
 ### Driver  NVIDIA 
-#### Tesla drivers for NC VMs (Tesla K80)
-Windows Server 2016	[Download](http://us.download.nvidia.com/Windows/Quadro_Certified/376.84/376.84-tesla-desktop-winserver2016-international-whql.exe).  
-Windows Server 2012 R2 [Download](http://us.download.nvidia.com/Windows/Quadro_Certified/376.84/376.84-tesla-desktop-winserver2008-2012r2-64bit-international-whql.exe)
 
 #### NVIDIA GRID drivers for NV VMs (Tesla M60)
 Windows Server 2016	[Download](https://go.microsoft.com/fwlink/?linkid=836843).  
