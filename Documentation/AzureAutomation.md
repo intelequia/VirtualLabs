@@ -9,6 +9,7 @@
     * [High Availability deployment](./Deployment-HA.md)
     * [Storage Spaces Direct (S2D) Scale-Out File Server (SOFS) Cluster](./S2DFileServer.md)
     * **[AzureAutomation](./AzureAutomation.md)** <--
+    * [SQL database scale up/down](./SQLdatabaseScaleUpDown.md)
 * [Admin Guide](./RemoteDesktopRemoteApp.md)
 * [User Guide](./UserAccess.md)
 ---
@@ -93,6 +94,7 @@ If you want to know more..
     * [Storage Spaces Direct (S2D) Scale-Out File Server (SOFS) Cluster](./S2DFileServer.md)
     * [User Access Web Certificate](./UserAccessWebCert.md)
     * **[AzureAutomation](./AzureAutomation.md)** <--
+    * [SQL database scale up/down](./SQLdatabaseScaleUpDown.md)
 * [Admin Guide](./RemoteDesktopRemoteApp.md)
 * [User Guide](./UserAccess.md)
 ---
