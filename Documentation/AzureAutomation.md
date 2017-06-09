@@ -34,7 +34,7 @@ A runbook is a set of tasks that perform some automated process in Azure Automat
 1. YourAutomationAccount >  
 ![Automation Account Runbooks](./images/AutomationAccountRunbooks.png)
 2. Runbooks > Browse Gallery  
-![Runbooks Gallery](./images/BrowseGallery.png)
+![Runbooks Gallery](./images/BrowseGallery.PNG)
 
 [Gisela Torres](https://www.returngis.net/en/about-me/) created a parallel shutdown/Start ARM VM's by Resource Group runbook.  
 In this project we have edited the script to use Run As Account in order to logging, thus we can avoid logging with credentials. It should look like this:
