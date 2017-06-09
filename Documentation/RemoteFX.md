@@ -49,9 +49,24 @@ Windows Server 2012 R2 [Download](https://go.microsoft.com/fwlink/?linkid=836844
     
     ![](./images/remote3.png)
 
-
+5. Now we have to use only the main display and disable the second one. To configure this option we have to access to the VM using VNC.		
+* We recommended [TightVNC](http://www.tightvnc.com/download.php). In the last step in the server installation, it will open the firewall ports. **Remember to open the port in the Network Security Group.**		
+ 	
+     ![](./images/remote4.png)		
+ 		
+6. After log in using VNC. 		
+     * We can see both displays.		
+      		
+      ![](./images/remote5.png)		
+     		
+7. Righ click on Desktop > "Display Settings".		
+		
+      ![](./images/remote6.png)		
+8. Select "Show only on 2" in the Multiple display and "Apply".		
+  		  
+    ![](./images/remote7.png)
     
-5. Group Policy settings
+9. Group Policy settings
    * The following Group Policy settings allow you to configure RemoteFX within your environment:   
 
 | Group Policy setting name | Location | Description | Default value |
@@ -70,6 +85,6 @@ Windows Server 2012 R2 [Download](https://go.microsoft.com/fwlink/?linkid=836844
     * **[RemoteFX](./RemoteFX.md)**<--
     * [Azure AD Proxy](./AzureADProxy.md)
     * [Create Additional Collection](./CreateSessionCollection.md)
-    * [Backups adn Restore](./BackupsAndRestore.md)
+    * [Backups and Restore](./BackupsAndRestore.md)
 * [User Guide](./UserAccess.md) 
 ---
