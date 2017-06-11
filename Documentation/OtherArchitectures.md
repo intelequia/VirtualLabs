@@ -1,18 +1,6 @@
-# Architecture
----
-* [Introduction](/README.md)
-* Architecture
-    * [Architecture Diagrams](./ArchitectureDiagram.md)
-    * **[Other Architectures](./OtherArchitectures.md)** <--
-    * [Architecture FlowChart](./RDSFlowChart.md)
-* [Deployment](./Deployment-basic.md)
-* [Admin Guide](./RemoteAppSessionHost.md)
-* [User Guide](./UserAccess.md)
----
+# Other Architectures
 
-## Other Architectures
-
-### Standard RDS deployment architectures
+## Standard RDS deployment architectures
 
 Remote Desktop Services has two standard architectures:
 + Basic deployment – This contains the minimum number of servers to create a fully effective RDS environment
@@ -25,7 +13,7 @@ Remote Desktop Services has two standard architectures:
 
 
 
-### RDS architectures with unique Azure PaaS roles
+## RDS architectures with unique Azure PaaS roles
 
 Though the standard RDS deployment architectures fit most scenarios, Azure continues to invest in first-party PaaS solutions that drive customer 
 value.  
@@ -41,7 +29,7 @@ Azure AD Domain Services can work in either deployment: basic or highly availabl
 ![RDS architectures with unique Azure PaaS roles](./images/aadds-rds.png)
 
 
-### RDS deployment with Azure AD Application Proxy
+## RDS deployment with Azure AD Application Proxy
 The two standard architecture diagrams above use the RD Web/Gateway servers as the Internet-facing entry point into the RDS system.  
 For some environments, administrators would prefer to remove their own servers from the perimeter and instead use technologies   
 that also provide additional security through reverse proxy technologies. The Azure AD Application Proxy PaaS role fits nicely with this scenario.  
@@ -51,15 +39,4 @@ that also provide additional security through reverse proxy technologies. The Az
 
 If you want to learn more
 - [Remote Desktop Services architecture](https://docs.microsoft.com/en-us/windows-server/remote/remote-desktop-services/desktop-hosting-logical-architecture)
-
----
-* [Introduction](/README.md)
-* Architecture
-    * [Architecture Diagrams](./ArchitectureDiagram.md)
-    * **[Other Architectures](./OtherArchitectures.md)** <--
-    * [Architecture FlowChart](./RDSFlowChart.md)
-* [Deployment](./Deployment-basic.md)
-* [Admin Guide](./RemoteAppSessionHost.md)
-* [User Guide](./UserAccess.md)
----
 
