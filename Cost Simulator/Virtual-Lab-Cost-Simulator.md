@@ -20,7 +20,7 @@ These are some of those variables, but then, &quot;thinking cloud&quot;, we coul
 
 Answering all these questions is not an easy task. To make it easier, we have built a cost estimation tool that, while not being perfect, can give you an idea of how much your deployment is going to cost per month or per year. We will be improving the tool frequently, so keep an eye to updates and announcements that will be published on this same repository.
 
-The tool is an [Excel workbook](Virtual Lab Cost Simulator v1.2.xlsx] with the following worksheets:
+The tool is an [Excel workbook](https://github.com/intelequia/VirtualLabs/blob/master/Cost%20Simulator/Virtual%20Lab%20Cost%20Simulator%20v1.2.xlsx?raw=true) with the following worksheets:
 
 - **Costs**: gives you an estimate of how much your deployment would cost with no autoscaling implementation;
 - **Inputs**: gives you an estimate for your deployment if you introduce autoscaling on the session hosts depending on your users&#39; workload;
