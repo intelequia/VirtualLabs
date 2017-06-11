@@ -1,22 +1,9 @@
-# Deployment
-## Admin Guide
----
-* [Introduction](/README.md)
-* [Architecture](./ArchitectureDiagram.md)
-* Deployment
-    * [Requirements](./Requirements.md)
-    * [Basic deployment](./Deployment-basic.md)
-    * [High Availability deployment](./Deployment-HA.md)
-    * [Storage Spaces Direct (S2D) Scale-Out File Server (SOFS) Cluster](./S2DFileServer.md)
-    * **[AzureAutomation](./AzureAutomation.md)** <--
-    * [SQL database scale up/down](./SQLdatabaseScaleUpDown.md)
-* [Admin Guide](./RemoteDesktopRemoteApp.md)
-* [User Guide](./UserAccess.md)
----
-### Azure Automation
-Microsoft Azure Automation provides a way for users to automate the manual tasks that are performed in a cloud environment.
+# Automated shutdown using Azure Automation
+Microsoft Azure Automation provides a way for users to automate the manual tasks that are performed in a cloud environment. One simple task is to automatically shutdown virtual machines or turn on them by using a schedule. This is quite important to save costs while the whole virtual lab is not being used, such as holidays.
 
-#### Create Automation Account
+Follow these steps to setup an Azure Automation account to setup a shutdown/start schedule for the desired virtual machines.
+
+## Create Automation Account
 1. Click New > Add Automation Account
 2. Fill the gaps and select suitable options for your environment  
 ![Add Automation Account](./images/addAutomationAccount.png)
@@ -29,7 +16,7 @@ When you create an Automation account in the Azure portal, you automatically cre
 If you see the following warning in the Add Automation Account blade, this is because your account is not a member of the Subscription Admins role and co-admin of the subscription. 
 ![]()
 
-#### Runbooks
+## Runbooks
 A runbook is a set of tasks that perform some automated process in Azure Automation.  
 
 1. YourAutomationAccount >  
@@ -83,18 +70,3 @@ workflow Shutdown-Start-ARM-VMs-Parallel
 If you want to know more..
   
 [Azure Automation](https://docs.microsoft.com/en-us/azure/automation/)
-
----
-* [Introduction](/README.md)
-* [Architecture](./ArchitectureDiagram.md)
-* Deployment
-    * [Requirements](./Requirements.md)
-    * [Basic deployment](./Deployment-basic.md)
-    * [High Availability deployment](./Deployment-HA.md)
-    * [Storage Spaces Direct (S2D) Scale-Out File Server (SOFS) Cluster](./S2DFileServer.md)
-    * [User Access Web Certificate](./UserAccessWebCert.md)
-    * **[AzureAutomation](./AzureAutomation.md)** <--
-    * [SQL database scale up/down](./SQLdatabaseScaleUpDown.md)
-* [Admin Guide](./RemoteDesktopRemoteApp.md)
-* [User Guide](./UserAccess.md)
----
