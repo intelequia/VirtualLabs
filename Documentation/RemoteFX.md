@@ -27,6 +27,7 @@ Windows Server 2016	[Download](https://go.microsoft.com/fwlink/?linkid=836843).
     
 ### Verify GPU driver installation
 On Azure NV VMs, a restart is required after driver installation. To query the GPU device state, run the [nvidia-smi](https://developer.nvidia.com/nvidia-system-management-interface) command-line utility installed with the driver.
+
 ![](./images/smi.png)
   
 ### Group Policy settings
