@@ -1,20 +1,10 @@
-# Deployment
----
-* [Introduction](/README.md)
-* [Architecture](./ArchitectureDiagram.md)
-* Deployment
-    * [Requirements](./Requirements.md)
-    * [Basic deployment](./Deployment-basic.md)
-    * **[High Availability deployment](./Deployment-HA.md)** <--
-    * [Storage Spaces Direct (S2D) Scale-Out File Server (SOFS) Cluster](./S2DFileServer.md)
-    * [AzureAutomation](./AzureAutomation.md)
-    * [SQL database scale up/down](./SQLdatabaseScaleUpDown.md)
-* [Admin Guide](./RemoteDesktopRemoteApp.md)
-* [User Guide](./UserAccess.md)
----
-## High Availability deployment
+# High Availability deployment
 
 Click: [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fintelequiardsha.blob.core.windows.net%2Fdata%2Frds-base-azuredeploy.json)
+<a href="http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2Fintelequia%2FVirtualLabs%2Fmaster%2FDeploy%2FArchitecture-HA%2Frds-base-azuredeploy.json" target="_blank">
+    <img src="http://armviz.io/visualizebutton.png"/>
+</a>
+
 
 1. Fill the form. You can get info about each field if you hold the cursor over the info icon.
    * Choose your subscription and create or select an existing resource group.
@@ -31,7 +21,9 @@ Click: [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://por
 5. Connect to the deployment through RD Web Access and RD Gateway
     * Enter the DNS name for the deployment in your browser https:// **{your-dns-label-prefix}** . **{location-of-resource-group}** .cloudapp.azure.com/RDWeb
 
-### What does this template do?
+![RDS High availabity architecture](./images/Architecture%20HA.png)
+
+## What does this template do?
 
 The first Azure Resource Manager template is ‘rds-base-azuredeploy.json’; it creates a Virtual Network, three subnets (Frontend, Backend and SessionHost ones), three Network Security Groups (one for each subnet to allow internal and external RDS communications), a Standard Storage account in which vhds will be stored, an Azure SQL server and an Azure SQL database which will store user's sessions.
 It is linked to other templates, this enable us decomposing our deployment into a set of targeted, purpose-specific templates:
