@@ -28,7 +28,7 @@ Luis Fco. Blanco, IT Director, Universidad Pontificia Comillas-ICAI-ICADE [Madri
 2. [Virtual Labs Cost simulator](Cost%20Simulator/Virtual-Lab-Cost-Simulator.md)
 3. [Architecture](Documentation/ArchitectureDiagram.md)
    - [Architecture diagrams](Documentation/ArchitectureDiagram.md)
-   - [Other architectures](Documentation/OtherArtchitectures.md)
+   - [Other architectures](Documentation/OtherArchitectures.md)
    - [Flow chart](Documentation/RDSFlowChart.md)
 4. [Deployment](Documentation/Requirements.md)
    - [Requirements](Documentation/Requirements.md)
