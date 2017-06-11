@@ -31,7 +31,7 @@ Luis Fco. Blanco, IT Director, Universidad Pontificia Comillas-ICAI-ICADE [Madri
    - [Other architectures](Documentation/otherartchitectures.md)
    - [Flow chart](Documentation/rdsflowchart.md)
 4. [Deployment](Documentation/requirements.md)
-   - [Requirements](Documentation/requirements.md)
+   - [Requirements](Documentation/Requirements.md)
    - [Basic deployment](Documentation/deployment-basic.md)
    - [High availability deployment](Documentation/deployment-ha.md)
    - [Storage Spaces Direct (S2D) Scale-Out File Server (SFOS) Cluster](Documentation/S2DFileServer.md)
