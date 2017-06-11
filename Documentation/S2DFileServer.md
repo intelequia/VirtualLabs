@@ -1,5 +1,4 @@
 # Storage Spaces Direct (S2D) Scale-Out File Server (SOFS) Cluster
----
 Remote Desktop Services (RDS) requires a domain-joined file server for user profile disks (UPDs). To deploy a high availability domain-joined scale-out file server (SOFS) in Azure, use Storage Spaces Direct (S2D) with Windows Server 2016.
 
 ## Installation
