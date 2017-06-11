@@ -1,6 +1,6 @@
 # High Availability deployment
 
-Click: [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fintelequiardsha.blob.core.windows.net%2Fdata%2Frds-base-azuredeploy.json)
+[![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fintelequiardsha.blob.core.windows.net%2Fdata%2Frds-base-azuredeploy.json)
 <a href="http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2Fintelequia%2FVirtualLabs%2Fmaster%2FDeploy%2FArchitecture-HA%2Frds-base-azuredeploy.json" target="_blank">
     <img src="http://armviz.io/visualizebutton.png"/>
 </a>
