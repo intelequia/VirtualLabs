@@ -39,8 +39,8 @@ First, make sure you meet the following requirements:
 #### Considerations for production environments
 
 * 1 to 10 users per core for Session Host, 200 users per core for Web/Gateway
-* Set aside 1 or 2 cores for SMs for other roles
-* A-Series VM most cost-effective (D-Series if you need SSDs, but typically don’t)
+* Set aside 1 or 2 cores for VMs for other roles
+* Check the [Virtual Labs costs estimation tool](Cost%20Simulator/Virtual-Lab-Cost-Sumulator.md) to help on getting the size and number of session hosts needed
 
 ### Basic deployment
 [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fintelequia%2FVirtualLabs%2Fmaster%2FDeploy%2FArchitecture-basic%2Frds-base-azuredeploy.json)
