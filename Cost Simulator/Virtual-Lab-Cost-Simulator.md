@@ -86,13 +86,3 @@ The final part is the box summarizing the total costs with autoscaling enabled. 
  ![](images/simulator-5.png)
 
 We have added a simple exchange rate conversion. Feel free to use your own exchange rate calculator for updated exchange rates and other currencies not listed.
-
----
-* Introduction
-    * [Business needs](/README.md)
-    * **[Costs simulator](./Virtual-Lab-Cost-Simulator.md)** <--
-* [Architecture](/Documentation/ArchitectureDiagram.md)
-* [Deployment](/Documentation/Deployment-basic.md)
-* [Admin Guide](/Documentation/RemoteDesktopRemoteApp.md)
-* [User Guide](./Documentation/UserAccess.md)
----
