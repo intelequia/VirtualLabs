@@ -7,12 +7,12 @@
 
 In this scenario, where the IT teams are facing **the new way of teaching and learning** , they are struggling to find the right solution which meet the demands coming from students and teachers and simultaneously, comply with the security policies of their current technological environment.
 
-**Virtual Lab in Azure** is the **Microsoft Cloud Solution for Education** which provide the suitable combination of infrastructure and services to help IT teams in schools and universities to achieve these common goals:
+**Virtual Lab in Azure** is the **Microsoft Cloud Solution for Education** which provides the suitable combination of infrastructure and services to help IT teams in schools and universities to achieve these common goals:
 
-- To reduce the cost of their current infrastructure on premises of the virtual lab.
-- To provide mobility to the students to access the applications of the virtual lab anywhere, anytime and from any device.
-- To improve the efficiency of their internal processes in managing permissions to the students, publishing the applications, monitoring the usage or scaling out the platform based on demand of concurrent users.
-- To connect the virtual lab to their virtual private network (VPN) to comply with their security policies.
+- To **reduce the costs** of their current on premises infrastructure of the virtual lab.
+- To provide mobility to the students to access the applications of the virtual lab **anywhere, anytime and from any device**.
+- To **improve the efficiency** of their internal processes in managing permissions to the students, publishing the applications, monitoring the usage or scaling out the platform based on demand of concurrent users.
+- To connect the virtual lab to their virtual private network (VPN) to **comply with security** policies.
 
 Schools and universities which have already deployed the **Virtual Lab in Azure** are experiencing the benefits of transferring the computation capacity from the user devices to the cloud machines.
 
@@ -20,7 +20,7 @@ Due to the applications used by elementary students are extremely different than
 
 The customer´s testimony below summarised precisely what the **Virtual Lab in Azure** has supposed to them:
 
-*In our decision-making process, we considered positively that with Azure we were able to pay just for the real usage as the solution was adapted to our calendars and academic timetables. Besides, it was 25% cheaper than the competitor´s solutions and it met our needs about to customize deployments of the virtual lab. On top of that, we could turn on/off services on the go and the integration with our local IT environment was also met.*
+> *In our decision-making process, we considered positively that with Azure we were able to pay just for the real usage as the solution was adapted to our calendars and academic timetables. Besides, it was 25% cheaper than the competitor´s solutions and it met our needs about to customize deployments of the virtual lab. On top of that, we could turn on/off services on the go and the integration with our local IT environment was also met.*
 
 Luis Fco. Blanco
 IT Director
