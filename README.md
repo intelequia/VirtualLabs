@@ -38,7 +38,7 @@ Luis Fco. Blanco, IT Director, Universidad Pontificia Comillas-ICAI-ICADE [Madri
    - [Automated shutdown with Azure Automation](Documentation/AzureAutomation.md)
    - [Automated SQL Database scaling](Documentation/SQLdatabaseScaleUpDown.md)
    - [Setting up RemoteFX on N-Series](Documentation/RemoteFX.md)
-5. [Administration](documnentation/CreateSessionCollection.md)
+5. [Administration](Documentation/CreateSessionCollection.md)
    - [Create a session collection](Documentation/CreateSessionCollection.md)
    - [Publishing your first application](Documentation/RemoteDesktopRemoteApp.md)
    - [Implement Azure AD Application Proxy](Documentation/AzureADProxy.md)
