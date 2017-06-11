@@ -22,9 +22,7 @@ The customer´s testimony below summarised precisely what the **Virtual Lab in A
 
 > *In our decision-making process, we considered positively that with Azure we were able to pay just for the real usage as the solution was adapted to our calendars and academic timetables. Besides, it was 25% cheaper than the competitor´s solutions and it met our needs about to customize deployments of the virtual lab. On top of that, we could turn on/off services on the go and the integration with our local IT environment was also met.*
 
-Luis Fco. Blanco
-IT Director
-Universidad Pontificia Comillas-ICAI-ICADE [Madrid]
+Luis Fco. Blanco, IT Director, Universidad Pontificia Comillas-ICAI-ICADE [Madrid]
 
 ## Deployment
 
