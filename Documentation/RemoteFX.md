@@ -1,28 +1,14 @@
-# Admin Guide
----
-* [Introduction](/README.md)
-* [Architecture](./ArchitectureDiagram.md)
-* [Deployment](./Deployment-basic.md)
-* Admin Guide
-    * [Remote Desktop - RemoteApp](./RemoteDesktopRemoteApp.md)
-    * **[RemoteFX](./RemoteFX.md)**<--
-    * [Azure AD Proxy](./AzureADProxy.md)
-    * [Create Additional Collection](./CreateSessionCollection.md)
-    * [Backups and Restore](./BackupsAndRestore.md)
-* [User Guide](./UserAccess.md) 
----
-
-## RemoteFX
+# Setting up RemoteFX on N-Series
 
 Microsoft® RemoteFX™ enables access to the RDS Host Server from a wide range of client devices including rich clients, thin clients, and ultrathin clients. It also ensures lower bandwidth than Windows Server® 2008 R2 when transferring rich graphics applications. When used with a hardware-based application-specific integrated circuit (ASIC), the server running Windows Server 2008 R2 with SP1 is capable of hosting more sessions than previous versions.
 
 To take advantage of the GPU capabilities, you must install NVIDIA graphics drivers on each VM after deployment. Driver setup information is also available for Linux VMs.
 
-### Supported GPU drivers
+## Supported GPU drivers
 Connect by Remote Desktop to each N-series VM. Download, extract, and install the supported driver for your Windows operating system. +
 NVIDIA Tesla drivers for NC VMs (Tesla K80)
 
-### Driver  NVIDIA 
+## Driver  NVIDIA 
 
 #### NVIDIA GRID drivers for NV VMs (Tesla M60)
 Windows Server 2016	[Download](https://go.microsoft.com/fwlink/?linkid=836843).  
@@ -48,25 +34,8 @@ Windows Server 2012 R2 [Download](https://go.microsoft.com/fwlink/?linkid=836844
     * Expand ‘Display adapters’, right click on ‘Microsoft Hyper-V Video’ and select ‘Disable’. 
     
     ![](./images/remote3.png)
-
-5. Now we have to use only the main display and disable the second one. To configure this option we have to access to the VM using VNC.		
-* We recommended [TightVNC](http://www.tightvnc.com/download.php). In the last step in the server installation, it will open the firewall ports. **Remember to open the port in the Network Security Group.**		
- 	
-     ![](./images/remote4.png)		
- 		
-6. After log in using VNC. 		
-     * We can see both displays.		
-      		
-      ![](./images/remote5.png)		
-     		
-7. Righ click on Desktop > "Display Settings".		
-		
-      ![](./images/remote6.png)		
-8. Select "Show only on 2" in the Multiple display and "Apply".		
-  		  
-    ![](./images/remote7.png)
-    
-9. Group Policy settings
+  
+5. Group Policy settings
    * The following Group Policy settings allow you to configure RemoteFX within your environment:   
 
 | Group Policy setting name | Location | Description | Default value |
@@ -76,15 +45,3 @@ Windows Server 2012 R2 [Download](https://go.microsoft.com/fwlink/?linkid=836844
 |Allow RDP redirection of other supported RemoteFX USB devices from this computer | Computer Configuration\Administrative Templates\Windows Components\Remote Desktop Services\Remote Desktop Connection Client\RemoteFX USB Redirection | Permit redirection of supported RemoteFX USB devices. | Not configured |
 | Do not allow supported Plug and Play device redirection | Computer Configuration\Administrative Templates\Windows Components\Remote Desktop Services\Remote Desktop Session Host \Device and Resource Redirection | Disable Plug and Play device redirection and RemoteFX USB redirection. | Not configured |
 
----
-* [Introduction](/README.md)
-* [Architecture](./ArchitectureDiagram.md)
-* [Deployment](./Deployment-basic.md)
-* Admin Guide
-    * [Remote Desktop - RemoteApp](./RemoteDesktopRemoteApp.md)
-    * **[RemoteFX](./RemoteFX.md)**<--
-    * [Azure AD Proxy](./AzureADProxy.md)
-    * [Create Additional Collection](./CreateSessionCollection.md)
-    * [Backups and Restore](./BackupsAndRestore.md)
-* [User Guide](./UserAccess.md) 
----
