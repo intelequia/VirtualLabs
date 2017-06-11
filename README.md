@@ -1,4 +1,4 @@
-# **Microsoft Azure Virtual Labs (RDS on Azure)**
+# **Virtual Labs on Microsoft Azure**
 
 ![RDS](./Documentation/images/rds-overview.png)
 
