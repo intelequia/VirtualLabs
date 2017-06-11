@@ -1,18 +1,7 @@
-# Deployment
----
-* [Introduction](/README.md)
-* [Architecture](./ArchitectureDiagram.md)
-* Deployment
-    * [Requirements](./Requirements.md)
-    * [Basic deployment](./Deployment-basic.md)
-    * [High Availability deployment](./Deployment-HA.md)
-    * [Storage Spaces Direct (S2D) Scale-Out File Server (SOFS) Cluster](./S2DFileServer.md)
-    * [AzureAutomation](./AzureAutomation.md)
-    * **[SQL database scale up/down](./SQLdatabaseScaleUpDown.md)** <--
-* [Admin Guide](./RemoteDesktopRemoteApp.md)
-* [User Guide](./UserAccess.md)
----
-## Scale up/down
+# Automated SQL Database scale up/down
+Once we have our RDS deployment, we would like to setup SQL Database autoscaling for our Connection Broker, so we can deliver more power during logon storms and then scale down after those peaks. This tutorial allows you to setup automatic SQL Database scale up/down by using Azure Automation. While this is showing how to automate depending on the user workload, you can setup an schedule on the workbook to scale up the SQL Database before the storm occurs.
+
+## SQL Database autoscaling
 
 1.	In this GitHub, go to VirtualLabs > Deploy > Architecture-HA > Scripts and download “Set-AzureSQLDatabaseEdition.ps1”
 
@@ -45,7 +34,7 @@
         8. Azure Run As Connection Name.  
     ![Test Runbook done](./images/RunbookSqL04.png)  
 
-5.	We may associate a webhook to the Runbook to automatize scale up/down:  
+5.	We may associate a webhook to the Runbook to automate scale up/down:  
     1. Click **your-RDS-Automation-Account** > Runbooks > **your-Runbook** > Webhooks  
     ![Add Webhook](./images/AddWebhook.png)
     2. Insert Webhook name, enable it and set an expiration date. Remember to copy the webhook URL, we will use it later.  
@@ -61,16 +50,3 @@
     If you check *”Email owners, contributors, and readers”* checkbox, this alert will send you an email like below one:  
     ![SQL database Alert Email](./images/SQLdatabaseAlertEmail.png)
 
----
-* [Introduction](/README.md)
-* [Architecture](./ArchitectureDiagram.md)
-* Deployment
-    * [Requirements](./Requirements.md)
-    * [Basic deployment](./Deployment-basic.md)
-    * [High Availability deployment](./Deployment-HA.md)
-    * [Storage Spaces Direct (S2D) Scale-Out File Server (SOFS) Cluster](./S2DFileServer.md)
-    * [AzureAutomation](./AzureAutomation.md)
-    * **[SQL database scale up/down](./SQLdatabaseScaleUpDown.md)** <--
-* [Admin Guide](./RemoteDesktopRemoteApp.md)
-* [User Guide](./UserAccess.md)
----
