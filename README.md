@@ -23,8 +23,31 @@ The customer´s testimony below summarised precisely what the **Virtual Lab in A
 
 Luis Fco. Blanco, IT Director, Universidad Pontificia Comillas-ICAI-ICADE [Madrid]
 
+## Table of contents
+1. [Introduction](readme.md)
+2. [Virtual Labs Cost simulator](cost%20simulator/Virtual-Lab-Cost-Simulator.md)
+3. [Architecture](documentation/architecturediagram.md)
+   - [Architecture diagrams](documentation/architecturediagram.md)
+   - [Other architectures](documentation/otherartchitectures.md)
+   - [Flow chart](documentation/rdsflowchart.md)
+4. [Deployment](documentation/requirements.md)
+   - [Requirements](documentation/requirements.md)
+   - [Basic deployment](documentation/deployment-basic.md)
+   - [High availability deployment](documentation/deployment-ha.md)
+   - [Storage Spaces Direct (S2D) Scale-Out File Server (SFOS) Cluster](documentation/S2DFileServer.md)
+   - [Automated shutdown with Azure Automation](documentation/AzureAutomation.md)
+   - [Automated SQL Database scaling](documentation/SQLdatabaseScaleUpDown.md)
+   - [Setting up RemoteFX on N-Series](documentation/RemoteFX.md)
+5. [Administration](documnentation/CreateSessionCollection.md)
+   - [Create a session collection](documentation/CreateSessionCollection.md)
+   - [Publishing your first application](documentation/RemoteDesktopRemoteApp.md)
+   - [Implement Azure AD Application Proxy](documentation/AzureADProxy.md)
+   - [Backup and restore](documentation/BackupsAndRestore.md)
+6. [Web portal](documentation/UserAccess.md)
+   - [Self-signed certificate installation](documentation/UserAccessWebCert.md)
 
-## Getting Started
+
+## Quick Start
 
 Follow these steps to deploy a Virtual Labs enviroment in your own subscription.
 
@@ -85,15 +108,6 @@ First, make sure you meet the following requirements:
     * Enter the DNS name for the deployment in your browser https:// **{your-dns-label-prefix}** . **{location-of-resource-group}** .cloudapp.azure.com/RDWeb
 
 5. It would be interesting to extend your deployment with a [Storage Spaces Direct (S2D) Scale-Out File Server (SOFS) cluster](./Documentation/S2DFileServer.md)
----
-* Introduction
-    * **[Business needs](./README.md)** <--
-    * [Cost simulator](./Cost%20Simulator/Virtual-Lab-Cost-Simulator.md)
-* [Architecture](./Documentation/ArchitectureDiagram.md)
-* [Deployment](./Documentation/Deployment-basic.md)
-* [Admin Guide](./Documentation/RemoteDesktopRemoteApp.md)
-* [User Guide](./Documentation/UserAccess.md)
----
 
 ## License
 
