@@ -21,6 +21,8 @@ This templates allows you to deploy a basic Remote Desktop Services scenario.
    * [Publish your first remoteApp ](./RemoteDesktopRemoteApp.md)
 5. Connect to the deployment through RD Web Access and RD Gateway
     * Enter the DNS name for the deployment in your browser https:// **{your-dns-label-prefix}** . **{location-of-resource-group}** .cloudapp.azure.com/RDWeb
+    
+![RDS basic architecture](./images/Architecture%20basic.png)
 
 ## What does this template do?
 
