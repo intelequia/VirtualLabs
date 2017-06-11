@@ -2,7 +2,6 @@
 
 ![RDS](./Documentation/images/rds-overview.png)
 
-## Business needs
 **"Bring your own device" and mobility** are two of the concepts that are transforming the way that Education is evolving in the era of the cloud. Increasingly, teachers are demanding to IT teams in schools and universities to have their resources, such as applications, available regardless the location they teach at. Besides, students also require to access those kinds of educational applications at any time, at any place and with any device (smartphone, tablet, home PC) they are connecting from.
 
 In this scenario, where the IT teams are facing **the new way of teaching and learning** , they are struggling to find the right solution which meet the demands coming from students and teachers and simultaneously, comply with the security policies of their current technological environment.
@@ -24,10 +23,27 @@ The customer´s testimony below summarised precisely what the **Virtual Lab in A
 
 Luis Fco. Blanco, IT Director, Universidad Pontificia Comillas-ICAI-ICADE [Madrid]
 
-## Deployment
 
-## Basic deployment
-Click: [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fintelequia%2FVirtualLabs%2Fmaster%2FDeploy%2FArchitecture-basic%2Frds-base-azuredeploy.json)
+## Getting Started
+
+Follow these steps to deploy a Virtual Labs enviroment in your own subscription.
+
+### Requirements
+
+First, make sure you meet the following requirements:
+
+* An active Azure subscription. It can be a Trial Account, MSDN or Retail Subscription.
+* Available quota of cores
+  * The basic deployment requires 6 VMs. When you select the size of these virtual machines, you must ensure that the total cores in the deployment do not exceed the subscription capacity (Remember: the default quota of cores is 20). [Learn how to check your subscription VM core usage here](https://blogs.msdn.microsoft.com/madan/2016/10/25/check-azure-resource-manager-arm-vm-core-storage-usage-using-powershell/).
+  
+#### Considerations for production environments
+
+* 1 to 10 users per core for Session Host, 200 users per core for Web/Gateway
+* Set aside 1 or 2 cores for SMs for other roles
+* A-Series VM most cost-effective (D-Series if you need SSDs, but typically don’t)
+
+### Basic deployment
+[![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fintelequia%2FVirtualLabs%2Fmaster%2FDeploy%2FArchitecture-basic%2Frds-base-azuredeploy.json)
 
 1. Fill the form. You can get info about each field if you hold the cursor over the info icon.
    * Choose your subscription and create or select an existing resource group.
@@ -44,8 +60,8 @@ Click: [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://por
 5. Connect to the deployment through RD Web Access and RD Gateway
     * Enter the DNS name for the deployment in your browser https:// **{your-dns-label-prefix}** . **{location-of-resource-group}** .cloudapp.azure.com/RDWeb
 
-## High Availability deployment
-Click: [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fintelequia%2FVirtualLabs%2Fmaster%2FDeploy%2FArchitecture-HA%2Frds-base-azuredeploy.json)
+### High Availability deployment
+[![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fintelequia%2FVirtualLabs%2Fmaster%2FDeploy%2FArchitecture-HA%2Frds-base-azuredeploy.json)
 
 1. Fill the form. You can get info about each field if you hold the cursor over the info icon.
    * Choose your subscription and create or select an existing resource group.
@@ -72,3 +88,15 @@ Click: [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://por
 * [Admin Guide](./Documentation/RemoteDesktopRemoteApp.md)
 * [User Guide](./Documentation/UserAccess.md)
 ---
+
+## License
+
+The MIT License (MIT)
+
+Copyright (c) 2016 Microsoft
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
