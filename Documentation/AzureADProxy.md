@@ -1,27 +1,14 @@
-# Admin Guide
----
-* [Introduction](/README.md)
-* [Architecture](./ArchitectureDiagram.md)
-* [Deployment](./Deployment-basic.md)
-* Admin Guide
-    * [Remote Desktop - RemoteApp](./RemoteDesktopRemoteApp.md)
-    * [RemoteFX](./RemoteFX.md)
-    * **[Azure AD Proxy](./AzureADProxy.md)**<--
-    * [Create Additional Collection](./CreateSessionCollection.md)
-    * [Backups and Restore](./BackupsAndRestore.md)
-* [User Guide](./UserAccess.md) 
----
-## Azure AD Proxy
-If you want to reduce the attack surface of your deployment by using Azure AD Application Proxy. This scenario gives a limited set of two-step verification and conditional access controls to RDS.
+# Implementing Azure AD Application Proxy
+You can reduce the attack surface of your deployment by using Azure AD Application Proxy. This scenario gives a limited set of two-step verification and conditional access controls to RDS.
 
-This Application Proxy scenario has a permanent outbound connection from the server running the connector service.The other deployments leave open inbound connections through a load balancer.
+This Application Proxy scenario has a permanent outbound connection from the server running the connector service. The other deployments leave open inbound connections through a load balancer.
 
-### Requirements
+## Requirements
 Your end users can only access this scenario through Windows 7 and Windows 10 desktops that connect through the RD Web page. This scenario is unsupported on other operating systems, even those with the Microsoft Remote Desktop applications.
 
 Your end users need to use Internet Explorer and enable the RDS ActiveX add-on when connecting to their resources.
 
-### Install and register a connector
+## Install and register a connector
 1. Sign in as an administrator in the Azure portal.
 2. Your current directory appears under your username in the top right corner. If you need to change directories, select that icon.
 3. Go to Azure Active Directory > Application Proxy > Select Download Connector  
@@ -37,7 +24,7 @@ When the installation completes, two new services are added to your server:
 * Microsoft AAD Application Proxy Connector enables connectivity
 * Microsoft AAD Application Proxy Connector Updater is an automated update service, which periodically checks for new versions of the connector and updates the connector as needed.
 
-### Publish the RD host endpoint
+## Publish the RD host endpoint
 1. Publish an on-premises app for remote access
     * Sign in as an administrator in the Azure portal.
     * Select Azure Active Directory > Enterprise applications > New application.  
@@ -55,7 +42,7 @@ When the installation completes, two new services are added to your server:
 4. Go to Azure Active Directory > App Registrations > Your application > Settings.
 5. Select Properties and update the Home-page URL field to point to your RD Web endpoint (like https://<rdhost>.com/RDWeb).
 
-### Direct RDS traffic to Application Proxy
+## Direct RDS traffic to Application Proxy
 Connect to the RDS deployment as an administrator and change the RD Gateway server name for the deployment. This ensures that connections go through the Azure AD Application Proxy.
 1. Connect to the RDS server running the RD Connection Broker role.
 2. Launch Server Manager.
@@ -72,7 +59,7 @@ Set-RDSessionCollectionConfiguration -CollectionName "<yourcollectionname>" -Cus
 
 Now that you've configured Remote Desktop, Azure AD Application Proxy has taken over as the internet-facing component of RDS. You can remove the other public internet-facing endpoints on your RD Web and RD Gateway machines
 
-### Test the scenario
+## Test the scenario
 Test the scenario with Internet Explorer on a Windows 7 or 10 computer.
 1. Go to the external URL you set up, or find your application in the MyApps panel.
 2. You are asked to authenticate to Azure Active Directory. Use an account that you assigned to the application.
@@ -83,15 +70,3 @@ If you want to know more..
 [Publish Remote Desktop with Azure AD Application Proxy](https://docs.microsoft.com/en-us/azure/active-directory/application-proxy-publish-remote-desktop)  
 [Get started with Application Proxy and install the connector](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-application-proxy-enable)  
 [Publish applications using Azure AD Application Proxy](https://docs.microsoft.com/en-us/azure/active-directory/application-proxy-publish-azure-portal)  
-
----
-* [Introduction](/README.md)
-* [Architecture](./ArchitectureDiagram.md)
-* [Deployment](./Deployment-basic.md)
-* Admin Guide
-    * [Remote Desktop - RemoteApp](./RemoteDesktopRemoteApp.md)
-    * [RemoteFX](./RemoteFX.md)
-    * **[Azure AD Proxy](./AzureADProxy.md)**<--
-    * [Create Additional Collection](./CreateSessionCollection.md)
-* [User Guide](./UserAccess.md) 
----
