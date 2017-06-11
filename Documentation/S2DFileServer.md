@@ -1,23 +1,8 @@
-# Deployment
----
-* [Introduction](/README.md)
-* [Architecture](./ArchitectureDiagram.md)
-* Deployment
-    * [Requirements](./Requirements.md)
-    * [Basic deployment](./Deployment-basic.md)
-    * [High Availability deployment](./Deployment-HA.md)
-    * **[Storage Spaces Direct (S2D) Scale-Out File Server (SOFS) Cluster](./S2DFileServer.md)** <--
-    * [AzureAutomation](./AzureAutomation.md)
-    * [SQL database scale up/down](./SQLdatabaseScaleUpDown.md)
-* [Admin Guide](./RemoteDesktopRemoteApp.md)
-* [User Guide](./UserAccess.md)
---- 
-
-### Storage Spaces Direct (S2D) Scale-Out File Server (SOFS) Cluster
+# Storage Spaces Direct (S2D) Scale-Out File Server (SOFS) Cluster
 ---
 Remote Desktop Services (RDS) requires a domain-joined file server for user profile disks (UPDs). To deploy a high availability domain-joined scale-out file server (SOFS) in Azure, use Storage Spaces Direct (S2D) with Windows Server 2016.
 
-### Installation
+## Installation
 
 We are going to deploy this architecture from the last template published from Microsoft, but if you want to deploy it manually you can follow this [guide.](https://docs.microsoft.com/es-es/windows-server/remote/remote-desktop-services/rds-storage-spaces-direct-deployment)
 
@@ -39,16 +24,3 @@ We are going to deploy this architecture from the last template published from M
     
     ![userprofiledisk](./images/fileserver4.png)
     
----
-* [Introduction](/README.md)
-* [Architecture](./ArchitectureDiagram.md)
-* Deployment
-    * [Requirements](./Requirements.md)
-    * [Basic deployment](./Deployment-basic.md)
-    * [High Availability deployment](./Deployment-HA.md)
-    * **[Storage Spaces Direct (S2D) Scale-Out File Server (SOFS) Cluster](./S2DFileServer.md)** <--
-    * [AzureAutomation](./AzureAutomation.md)
-    * [SQL database scale up/down](./SQLdatabaseScaleUpDown.md)
-* [Admin Guide](./RemoteDesktopRemoteApp.md)
-* [User Guide](./UserAccess.md)
---- 
