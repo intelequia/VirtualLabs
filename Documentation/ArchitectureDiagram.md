@@ -1,27 +1,5 @@
 # Architecture Diagrams
----
-* [Introduction](/README.md)
-* Architecture
-    * **[Architecture Diagrams](./ArchitectureDiagram.md)** <--
-    * [Other Architectures](./OtherArchitectures.md)
-    * [Architecture FlowChart](./RDSFlowChart.md)
-* [Deployment](./Deployment-basic.md)
-* [Admin Guide](./RemoteAppSessionHost.md)
-* [User Guide](./UserAccess.md)
----
-
-## Basic
+## Basic deployment diagram
 ![RDS basic architecture](./images/Architecture%20basic.png)
-## High Availability
+## High Availability deployment diagram
 ![RDS High availabity architecture](./images/Architecture%20HA.png)
-
----
-* [Introduction](/README.md)
-* Architecture
-    * **[Architecture Diagrams](./ArchitectureDiagram.md)** <--
-    * [Other Architectures](./OtherArchitectures.md)
-    * [Architecture FlowChart](./RDSFlowChart.md)
-* [Deployment](./Deployment-basic.md)
-* [Admin Guide](./RemoteAppSessionHost.md)
-* [User Guide](./UserAccess.md)
----
