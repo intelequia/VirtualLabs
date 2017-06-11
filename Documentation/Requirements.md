@@ -8,9 +8,8 @@ First, make sure you meet the following requirements:
   
 ## Ensure Subscription Limits Suitable for RDS
 * Default limits of 20 cores and 20 VMs (Call Support to Extend Limits if Needed).
-* Consider: 1 to 10- users per core for Session Host, 200 users per core for Web/Gateway
-* Set aside 1 or 2 cores for SMs for other roles
-* A-Series VM most cost-effective (D-Series if you need SSDs, but typically don’t)
+* Consider: 1 to 10 users per core for Session Host, 200 users per core for Web/Gateway
+* Check the [Virtual Labs costs estimation tool](../Cost%20Simulator/Virtual-Lab-Cost-Simulator.md) to help on getting the size and number of session hosts needed
 
 
 Next steps:
