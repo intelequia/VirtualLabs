@@ -65,17 +65,3 @@ If you want to learn more...
 * [Licensing (RDLic)](https://technet.microsoft.com/en-us/library/cc725933)
 * [Session Host (RDSH)](https://technet.microsoft.com/en-us/library/cc742822)
 * [Scale-Out File Server (SOFS)](https://technet.microsoft.com/en-us/library/hh831349)
-
----
-* [Introduction](/README.md)
-* [Architecture](./ArchitectureDiagram.md)
-* Deployment
-    * [Requirements](./Requirements.md)
-    * [Basic deployment](./Deployment-basic.md)
-    * **[High Availability deployment](./Deployment-HA.md)** <--
-    * [Storage Spaces Direct (S2D) Scale-Out File Server (SOFS) Cluster](./S2DFileServer.md)
-    * [AzureAutomation](./AzureAutomation.md)
-    * [SQL database scale up/down](./SQLdatabaseScaleUpDown.md)
-* [Admin Guide](./RemoteDesktopRemoteApp.md)
-* [User Guide](./UserAccess.md)
----
