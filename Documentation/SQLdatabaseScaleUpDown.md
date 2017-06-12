@@ -3,7 +3,7 @@ Once we have our RDS deployment, we would like to setup SQL Database autoscaling
 
 ## SQL Database autoscaling
 
-1.	In this GitHub, go to VirtualLabs > Deploy > Architecture-HA > Scripts and download “Set-AzureSQLDatabaseEdition.ps1”
+1.	In this GitHub, go to VirtualLabs > Deploy > Architecture-HA > Scripts and download [Set-AzureSQLDatabaseEdition.ps1](../Deploy/Architecture-HA/Scripts/Set-AzureSqlDatabaseEdition.ps1)
 
 2.	Import this file into Azure.
     1. If you don’t have an Azure Automation Account you can follow this steps to create one: [Azure Automation](./AzureAutomation.md)
