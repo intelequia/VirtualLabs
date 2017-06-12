@@ -21,9 +21,7 @@ Windows Server 2016	[Download](https://go.microsoft.com/fwlink/?linkid=836843).
 2. We have to open the **Device Manager**, we'll notice that the driver for M60 video card will be missing.
    ![](./images/remote1.png)
 3. Install the lastest [NVIDIA Drivers](http://www.nvidia.com/download/index.aspx).   
-4. Optional. After rebooting the VM, if you want to ensure all the apps uses the NVIDIA driver, disable the default display adapter.
-    * Expand ‘Display adapters’, right click on ‘Microsoft Hyper-V Video’ and select ‘Disable’.     
-    ![](./images/remote3.png)
+4. Reboot the VM.
     
 ### Verify GPU driver installation
 On Azure NV VMs, a restart is required after driver installation. To query the GPU device state, run the [nvidia-smi](https://developer.nvidia.com/nvidia-system-management-interface) command-line utility installed with the driver.
