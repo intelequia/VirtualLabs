@@ -22,7 +22,7 @@ The environment to be used to execute the script must meet the following require
         
 
 ## Script Deployment
-The script mentioned below is distributed in [Technet]([Automatic Scaling of Remote Desktop Session Hosts in Azure Virtual Machines](https://gallery.technet.microsoft.com/scriptcenter/Automatic-Scaling-of-9b4f5e76)) under Apache license. Use the following procedure to deploy the script.
+The script mentioned below is distributed in [Technet](https://gallery.technet.microsoft.com/scriptcenter/Automatic-Scaling-of-9b4f5e76) under Apache license. Use the following procedure to deploy the script.
 
 1. Logon to the RD Connection Broker server using a domain administrative account.
 2. Create a folder on the RD Connection Broker server (e.g. c:\DynamicRDSH)
