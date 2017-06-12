@@ -22,7 +22,7 @@ The environment to be used to execute the script must meet the following require
         
 
 ## Script Deployment
-Use the following procedure to deploy the script.
+The script mentioned below is distributed in [Technet]([Automatic Scaling of Remote Desktop Session Hosts in Azure Virtual Machines](https://gallery.technet.microsoft.com/scriptcenter/Automatic-Scaling-of-9b4f5e76)) under Apache license. Use the following procedure to deploy the script.
 
 1. Logon to the RD Connection Broker server using a domain administrative account.
 2. Create a folder on the RD Connection Broker server (e.g. c:\DynamicRDSH)
@@ -53,5 +53,5 @@ Use the following procedure to deploy the script.
     10. Enter the password for the administrative account used to run the script.
 
 If you want to know more...
-[Automatic Scaling of Remote Desktop Session Hosts in Azure Virtual Machines](https://gallery.technet.microsoft.com/scriptcenter/Automatic-Scaling-of-9b4f5e76)
-[Use portal to create an Azure Active Directory application and service principal that can access resources](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal)
+* [Automatic Scaling of Remote Desktop Session Hosts in Azure Virtual Machines](https://gallery.technet.microsoft.com/scriptcenter/Automatic-Scaling-of-9b4f5e76)
+* [Use portal to create an Azure Active Directory application and service principal that can access resources](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal)
