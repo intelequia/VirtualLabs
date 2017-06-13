@@ -24,7 +24,7 @@ The customer´s testimony below summarised precisely what the **Virtual Lab in A
 Luis Fco. Blanco, IT Director, Universidad Pontificia Comillas-ICAI-ICADE [Madrid]
 
 ## Table of contents
-1. [Introduction](readme.md)
+1. [Introduction](README.md)
 2. [Virtual Labs Cost simulator](Cost%20Simulator/Virtual-Lab-Cost-Simulator.md)
 3. [Architecture](Documentation/ArchitectureDiagram.md)
    - [Architecture diagrams](Documentation/ArchitectureDiagram.md)
