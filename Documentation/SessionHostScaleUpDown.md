@@ -52,6 +52,6 @@ Use the following procedure to deploy the script.
     8. Select OK to accept defaults under the Conditions and Settings tabs
     10. Enter the password for the administrative account used to run the script.
 
-If you want to know more...
+If you want to know more...  
 [Automatic Scaling of Remote Desktop Session Hosts in Azure Virtual Machines](https://gallery.technet.microsoft.com/scriptcenter/Automatic-Scaling-of-9b4f5e76)
 [Use portal to create an Azure Active Directory application and service principal that can access resources](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal)
