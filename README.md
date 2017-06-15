@@ -37,7 +37,7 @@ Luis Fco. Blanco, IT Director, Universidad Pontificia Comillas-ICAI-ICADE [Madri
    - [Storage Spaces Direct (S2D) Scale-Out File Server (SFOS) Cluster](Documentation/S2DFileServer.md)
    - [Automated shutdown with Azure Automation](Documentation/AzureAutomation.md)
    - [Automated SQL Database scaling](Documentation/SQLdatabaseScaleUpDown.md)
-   - [Automated Remote Desktop Session Host scaling](Documentation/SQLdatabaseScaleUpDown.md)
+   - [Automated Remote Desktop Session Host scaling](Documentation/SessionHostScaleUpDown.md)
    - [Setting up RemoteFX on N-Series](Documentation/RemoteFX.md)
 5. [Administration](Documentation/CreateSessionCollection.md)
    - [Create a session collection](Documentation/CreateSessionCollection.md)
