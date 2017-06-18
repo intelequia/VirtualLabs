@@ -113,9 +113,6 @@ workflow Set-AzureSqlDatabaseEdition
         Write-Output "Establish credentials for Azure SQL Database server"
         $Servercredential = new-object System.Management.Automation.PSCredential($Using:Credential.UserName, (($Using:Credential).GetNetworkCredential().Password | ConvertTo-SecureString -asPlainText -Force)) 
         
-        Write-Output "Create connection context for Azure SQL Database server"
-        $CTX = Get-AzureRmSqlServer -ResourceGroupName "Using:$ResourceName" -ServerName "$Using:SqlServerName" 
-
         Write-Output "Get Azure SQL Database context"
         $Db = Get-AzureRmSqlDatabase -DatabaseName  $Using:DatabaseName -ResourceGroupName "$Using:ResourceName" -ServerName $Using:SqlServerName
         
