@@ -4,10 +4,24 @@ Once we have our RDS deployment, we would like to setup Remote Desktop Session H
 ## Prerequisites
 The environment to be used to execute the script must meet the following requirements.
 
-1. An RDS deployment in Azure under Azure Resource Manager mode with 2 or more RDSH servers in a collection, and each Azure virtual machine name has the same name as the hostname of the operating system running on that virtual machine. More Information on deploying RDS in Azure can be found here.
+1. An RDS deployment in Azure under Azure Resource Manager mode with 2 or more RDSH servers in a collection, and each Azure virtual machine name has the same name as the hostname of the operating system running on that virtual machine.
 2. Internet access from the Remote Desktop Connection Broker (RD Connection Broker) server.
-3. PowerShell 4.0 or higher (default for Windows Server 2012 R2) installed on the RD Connection Broker server. (The script must be run on the VM with the RD Connection Broker role service installed.)
+3. PowerShell 4.0 or higher (default for Windows Server 2012 R2) installed on the RD Connection Broker server. (The script must be run on the VM with the RD Connection Broker role service installed). Since we have deployed VMs with Windows Server 2016 by using the resource manager templates, this is covered
 4. Microsoft Azure Resource Manager PowerShell Module installed on the RD Connection Broker server. You can download and install the Azure Resource Manager PowerShell modules by running Install-Module AzureRM in PowerShell as shown below.
+'''
+Windows PowerShell
+Copyright (C) 2016 Microsoft Corporation. All rights reserved.
+
+PS C:\WINDOWS\system32> Install-Module AzureRM
+
+Untrusted repository
+You are installing the modules from an untrusted repository. If you trust this repository, change its
+InstallationPolicy value by running the Set-PSRepository cmdlet. Are you sure you want to install the modules from
+'PSGallery'?
+[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): Y
+
+'''
+
 5. Create an Azure Active Directory application and service principal that can access resources.
     1. Click Azure Active Directory > App registrations > New application registration  
     ![App Registration Path](./images/AppRegistrationPath.png)  
