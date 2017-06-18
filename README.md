@@ -46,6 +46,9 @@ Luis Fco. Blanco, IT Director, Universidad Pontificia Comillas-ICAI-ICADE [Madri
    - [Backup and restore](Documentation/BackupsAndRestore.md)
 6. [Web portal](Documentation/UserAccess.md)
    - [Self-signed certificate installation](Documentation/UserAccessWebCert.md)
+7. Videos
+   - [Virtual Labs on Microsoft Azure (1 of 2)](https://youtu.be/Mdg7pVF_kCk)
+   - [Virtual Labs on Microsoft Azure (2 of 2)](https://youtu.be/wjR13X5l2iw)
 
 
 ## Quick Start
