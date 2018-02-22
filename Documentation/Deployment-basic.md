@@ -2,8 +2,8 @@
 
 This templates allows you to deploy a basic Remote Desktop Services scenario.
 
-[![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fgithub.com%2Fintelequia%2FVirtualLabs%2Fblob%2Fmaster%2FDeploy%2FArchitecture-basic%2Frds-base-azuredeploy.json)
-<a href="http://armviz.io/#/?load=https%3A%2F%2Fgithub.com%2Fintelequia%2FVirtualLabs%2Fblob%2Fmaster%2FDeploy%2FArchitecture-basic%2Frds-base-azuredeploy.json" target="_blank">
+[![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fintelequia%2FVirtualLabs%2Fmaster%2FDeploy%2FArchitecture-basic%2Frds-base-azuredeploy.json)
+<a href="http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2Fintelequia%2FVirtualLabs%2Fmaster%2FDeploy%2FArchitecture-basic%2Frds-base-azuredeploy.json" target="_blank">
     <img src="http://armviz.io/visualizebutton.png"/>
 </a>
 
