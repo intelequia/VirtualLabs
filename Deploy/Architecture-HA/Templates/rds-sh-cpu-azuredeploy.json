@@ -63,8 +63,8 @@
     "SHVMSize": "[parameters('VMSize')]",
     "subnetId": "[resourceId('Microsoft.Network/virtualNetworks/subnets', parameters('vnetName'), parameters('subnetName'))]",
     "imagePublisher": "MicrosoftWindowsServer",
-    "imageOffer": "WindowsServer",
-    "imageSKU": "2016-Datacenter"
+    "imageOffer": "WindowsServerSemiAnnual",
+    "imageSKU": "Datacenter-Core-1709-smalldisk"
   },
   "resources": [
     {
