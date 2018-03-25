@@ -106,7 +106,7 @@ First, make sure you meet the following requirements:
    * Select the size and how many Session Host with CPU VM will be deployed.
 2. Now wait for the green check in the notifications hub. It will take nearly **2 hours** for completes the resources deployment.
 3. Export and copy self-signed certificates to client computers
-A self-signed certificate have been used for the deployment. This certificate will need to be installed on the local client machines. See how do it following the steps described in this guide.
+   * A self-signed certificate have been used for the deployment. This certificate will need to be installed on the local client machines. See how do it following the steps described in [this guide](Documentation/UserAccessWebCert.md). 
 4. Configure Session Collection
    * Set Domain Users as user group
    * [Publish your first remoteApp ](./Documentation/RemoteDesktopRemoteApp.md)
