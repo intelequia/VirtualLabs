@@ -29,7 +29,7 @@ On Azure NV VMs, a restart is required after driver installation. To query the G
 ![](./images/smi.png)
   
 ### Group Policy settings
-   * The following Group Policy settings allow you to configure RemoteFX within your environment:   
+   * The following Group Policy settings allow you to configure RemoteFX within your environment. Note that when joining the server to the Session Host collection, you can get a warning indicating that the local group policies are different. You will need to setup these policies through the Group Policy Management console (GPMC) on the domain controller. Once that you have setup them, run the command "gpupdate" on a console on the local server to avoid waiting the automatic policiy refresh that happens every 5 minutes.    
 
 | Group Policy setting name | Location | Description | Default value |
 | :---  | :---  | :--- | :---  |
