@@ -20,7 +20,7 @@ Windows Server 2016	[Download](https://go.microsoft.com/fwlink/?linkid=836843).
 1. Connect to the Session Host VM.
 2. We have to open the **Device Manager**, we'll notice that the driver for M60 video card will be missing.
    ![](./images/remote1.png)
-3. Install the lastest [NVIDIA Drivers](http://www.nvidia.com/download/index.aspx).   
+3. Install the [NVIDIA GRID Drivers for VN VMs (Tesla M60)](https://go.microsoft.com/fwlink/?linkid=836843).   
 4. Reboot the VM.
     
 ### Verify GPU driver installation
